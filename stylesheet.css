@@ -35,6 +35,10 @@ h1 {
   font-size: 0.8em;
 }
 
+h3 {
+	color:grey;
+}
+
 /* Responsive/Flexible */
 
 .inhalt,
@@ -110,14 +114,52 @@ font-size: 11pt;
   border: none;
 }
 
-.naviPhoto, .naviGraph {
-  display: flex;
-  align-items: flex-end;
-  background: none;
-  padding-bottom: 0.7em;
+.naviPhoto {
+	position: fixed;
+	bottom: 1%;
+	padding-bottom: 2em;
+}
+
+.naviGraph {
+	position: fixed;
+	bottom: 51%;
+	padding-bottom: 2em;
 }
 
 /* Gallery */ 
+
+.column {
+    padding: 0% 0% 0% 2%;
+}
+
+.graphContent {
+	column-count: 1;
+	column-gap: 1em;
+	overflow-y: auto;
+}
+
+.graphContent::-webkit-scrollbar {
+    display: none;
+}
+
+.graphGalleryPic {
+        width: 90%;
+        padding: 20px;
+        }
+
+        .graphPic {
+        	width: 100%;
+        }
+
+.photoContent {
+	-ms-overflow-style: none;
+	display: flex;
+	overflow-y: scroll;
+}
+
+.photoContent::-webkit-scrollbar {
+    display: none;
+}
 
 /* Breakpoint für Desktop */
 
@@ -136,7 +178,7 @@ font-size: 11pt;
        }
 
         .column {
-          padding: 0% 3%;
+          padding: 0% 3% 0% 2%;
         }
 
         .logo {
@@ -147,7 +189,18 @@ font-size: 11pt;
         }
 
         .naviPhoto, .naviGraph {
-          padding-bottom: 4em;
+        bottom: 0px;
+        padding-bottom: 4em;
+        }
+
+        .graphContent {
+        	column-count: 2;
+        	overflow-y: auto;
+        }
+
+        .graphPic {
+        	width: 100%;
+        	padding-top: 5em;
         }
 }
 
