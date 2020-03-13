@@ -54,7 +54,7 @@ h3 {
 .container {
   flex-flow: column nowrap;
   height: 100vh;
-  width:100%;
+  width: 100%;
 }
   .column {
     padding: 2% 0%;
@@ -99,7 +99,7 @@ font-size: 11pt;
 .aktiverButtonGraph, .pushItGraph {
   font-family: "Akzidenz Pro Regular";
   text-align: left;
-  font-size: 0.2em;
+  font-size: 0.5em;
   color: white;
   background: none;
   border: none;
@@ -108,7 +108,7 @@ font-size: 11pt;
 .aktiverButtonPho, .pushItPho {
   font-family: "Akzidenz Pro Regular";
   text-align: left;
-  font-size: 0.2em;
+  font-size: 0.5em;
   color: black;
   background: none;
   border: none;
@@ -132,34 +132,26 @@ font-size: 11pt;
     padding: 0% 0% 0% 2%;
 }
 
-.graphContent {
-	column-count: 1;
-	column-gap: 1em;
-	overflow-y: auto;
+.graphContent, .photoContent {
+          display: grid;
+          grid-gap: 2em;
+          padding: 0% 4% 0% 4%;
+          grid-template-columns: repeat(1, 10fr);
+	        overflow-y: auto;
 }
 
-.graphContent::-webkit-scrollbar {
-    display: none;
-}
-
-.graphGalleryPic {
+.graphGalleryPic, .photoGalleryPic {
         width: 90%;
         padding: 20px;
         }
 
-        .graphPic {
-        	width: 100%;
-        }
 
-.photoContent {
-	-ms-overflow-style: none;
-	display: flex;
-	overflow-y: scroll;
-}
-
-.photoContent::-webkit-scrollbar {
-    display: none;
-}
+.photoContent::-webkit-scrollbar { width: 0 !important }
+.photoContent { overflow: -moz-scrollbars-none; }
+.photoContent { -ms-overflow-style: none; }
+.graphContent::-webkit-scrollbar { width: 0 !important }
+.graphContent { overflow: -moz-scrollbars-none; }
+.graphContent { -ms-overflow-style: none; }
 
 /* Breakpoint für Desktop */
 
@@ -193,14 +185,17 @@ font-size: 11pt;
         padding-bottom: 4em;
         }
 
-        .graphContent {
-        	column-count: 2;
-        	overflow-y: auto;
+        .graphContent, .photoContent {
+          display: grid;
+          grid-gap: 1em;
+          padding: 0% 4% 0% 4%;
+          grid-template-columns: repeat(2, 10fr);
         }
 
-        .graphPic {
-        	width: 100%;
-        	padding-top: 5em;
+        .graphPic, .photoPic {
+          width: 100%;
+        	padding-top: 4em;
         }
+
 }
 
