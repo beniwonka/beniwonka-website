@@ -6,6 +6,7 @@ Building my first own website.
 
 ## Next Step’ 
 
-* masonry-ish gallery  
+* add filter to gallery 
 * click on gallery-thumbnails opens up a lightbox-like site with details and more picture of the project
+* sidebar for mobile
 * add animations 
