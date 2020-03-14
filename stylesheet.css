@@ -34,6 +34,10 @@ h3 {
 	color:grey;
 }
 
+button {
+  cursor:pointer;
+}
+
 /* Responsive/Flexible */
 
 .inhalt,
@@ -91,7 +95,7 @@ border: none;
 font-size: 11pt;
 }
 
-.aktiverButtonGraph, .pushItGraph {
+.buttonGraph {
   font-family: "Akzidenz Pro Regular";
   text-align: left;
   font-size: 0.5em;
@@ -100,11 +104,21 @@ font-size: 11pt;
   border: none;
 }
 
-.aktiverButtonPho, .pushItPho {
+
+.buttonPhoto {
   font-family: "Akzidenz Pro Regular";
   text-align: left;
   font-size: 0.5em;
   color: black;
+  background: none;
+  border: none;
+}
+
+.activeGraph, .activePhoto {
+  font-family: "Akzidenz Pro Regular";
+  text-align: left;
+  font-size: 0.5em;
+  color: grey;
   background: none;
   border: none;
 }
@@ -139,11 +153,6 @@ font-size: 11pt;
         width: 90%;
         padding: 20px;
         }
-
-.graphPic, .photoPic {
-          width: 100%;
-        }
-
 
 .photoContent::-webkit-scrollbar { width: 0 !important }
 .photoContent { overflow: -moz-scrollbars-none; }
@@ -187,11 +196,11 @@ font-size: 11pt;
         .graphContent, .photoContent {
           display: grid;
           grid-gap: 1em;
-          padding: 0% 4% 0% 4%;
+          padding: 0% 9% 0% 4%;
           grid-template-columns: repeat(2, 10fr);
         }
 
-        .graphPic, .photoPic {
+        .graphGalleryPic, .photoGalleryPic {
           width: 100%;
         	padding-top: 4em;
         }

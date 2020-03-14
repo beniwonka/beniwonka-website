@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
   <meta charset="utf-8">
   <title>Beni Wonka</title>
   <link rel="stylesheet" href="stylesheet.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+
 </head>
+
+
 
 <body>
 
@@ -13,101 +22,68 @@
 <main id="inhalt"> 
   <section class="container">
 
-    <div id="graphicContainer" class="column columnLeft ">
+    <div id="graphicContainer" class="column columnLeft">
 
         
         <div class="naviGraph">
           <div clas="headline">
           <h1 class="naviHead">GRAPHIC</h1><br>
-          <button class="aktiverButtonGraph" onclick="filterSelection('allgraph')">ALL</button><small>—</small>
-          <button class="pushItGraph" onclick="filterSelection('artwork')">ARTWORK</button><small>—</small>
-          <button class="pushItGraph" onclick="filterSelection('editorial')">EDITORIAL</button><small>—</small>
-          <button class="pushItGraph" onclick="filterSelection('uxui')">UX/UI</button>
+          <button class="buttonGraph activeGraph" data-filter="allGraph">ALL</button><small>—</small>
+          <button class="buttonGraph" data-filter="artwork">ARTWORK</button><small>—</small>
+          <button class="buttonGraph" data-filter="editorial">EDITORIAL</button><small>—</small>
+          <button class="buttonGraph" data-filter="uxui">UX/UI</button>
           </div>
          </div>
 
         <div class="graphContent">
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x600.jpg">
-        	</div>
 
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x800.jpg">
-        	</div>
+        		<img class="graphGalleryPic filtergraph uxui" src="Bilder/600x400.jpg">
+            <img class="graphGalleryPic filtergraph editorial" src="Bilder/600x600.jpg">
+            <img class="graphGalleryPic filtergraph artwork" src="Bilder/600x800.jpg">
+            <img class="graphGalleryPic filtergraph artwork" src="Bilder/600x600.jpg">
+            <img class="graphGalleryPic filtergraph editorial" src="Bilder/600x800.jpg">
+            <img class="graphGalleryPic filtergraph uxui" src="Bilder/600x400.jpg">
+            <img class="graphGalleryPic filtergraph artwork" src="Bilder/600x600.jpg">
+            <img class="graphGalleryPic filtergraph editorial" src="Bilder/600x800.jpg">
+            <img class="graphGalleryPic filtergraph uxui" src="Bilder/600x400.jpg">
 
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x400.jpg">
-        	</div>
-
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x400.jpg">
-        	</div>
-
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x600.jpg">
-        	</div>
-
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x800.jpg">
-        	</div>
-
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x800.jpg">
-        	</div>
-
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x800.jpg">
-        	</div>
-
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x800.jpg">
-        	</div>
-
-        	<div class="graphGalleryPic">
-        		<img class="graphPic" src="Bilder/600x800.jpg">
-        	</div>
-        </div>
-
+       </div>
 
     </div>
     
     <div id="photographyContainer" class="column columnRight">
-                      <div class="sideNavi">
-    <h1 class="side">ABOUT</h1><h1 class="side">—</h1><h1 class="side">CONTACT</h1>
+    
+    <div class="sideNavi">
+      
+      <h1 class="side">ABOUT</h1><h1 class="side">—</h1><h1 class="side">CONTACT</h1>
+    
     </div>
 
 
           <div class="naviPhoto">
             <div clas="headline"> 
             <h1 class="naviHead">PHOTOGRAPHY</h1> <br>
-          <button class="aktiverButtonPho" onclick="filterSelection('allphoto')">ALL</button><small>—</small>
-          <button class="pushItPho" onclick="filterSelection('people')">PEOPLE</button><small>—</small>
-          <button class="pushItPho" onclick="filterSelection('documentary')">DOCUMENTARY</button>
+          <button class="buttonPhoto activePhoto" data-filter="allPhoto">ALL</button><small>—</small>
+          <button class="buttonPhoto" data-filter="people">PEOPLE</button><small>—</small>
+          <button class="buttonPhoto" data-filter="documentary">DOCUMENTARY</button>
         </div>
-          </div>
+      </div>
 
            <div class="photoContent">
 
-        	         <div class="photoGalleryPic">
-            <img class="photoPic" src="Bilder/600x400.jpg">
-          </div>
-                    <div class="photoGalleryPic">
-            <img class="photoPic" src="Bilder/600x800.jpg">
-          </div>
-                    <div class="photoGalleryPic">
-            <img class="photoPic" src="Bilder/600x600.jpg">
-          </div>
-                    <div class="photoGalleryPic">
-            <img class="photoPic" src="Bilder/600x600.jpg">
-          </div>
-                    <div class="photoGalleryPic">
-            <img class="photoPic" src="Bilder/600x800.jpg">
-          </div>
-                    <div class="photoGalleryPic">
-            <img class="photoPic" src="Bilder/600x400.jpg">
-          </div>
+        	 <img class="photoGalleryPic filterphoto people" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto documentary" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto people" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto documentary" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto documentary" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto documentary" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto people" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto documentary" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto documentary" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto people" src="Bilder/600x400.jpg">
+           <img class="photoGalleryPic filterphoto documentary" src="Bilder/600x400.jpg">
         
-        </div>
+           </div>
         
     </div>
     
