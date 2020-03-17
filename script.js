@@ -39,3 +39,5 @@ $(document).ready(function(){
 })
 
 })
+
+$( "[onClick]" ).css('cursor', 'pointer');
