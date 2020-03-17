@@ -6,7 +6,6 @@ Building my first own website.
 
 ## Next Step’ 
 
-* fix link anchors over pictures (too big)
 * add »contact« and »about« site
 * add animations
 * fix browser compatibility
