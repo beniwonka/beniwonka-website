@@ -19,6 +19,10 @@ body {
   border: 0;
 }
 
+a {
+    display: block;
+}
+
 .logo {
   width: 5em;
   position: fixed;
@@ -40,7 +44,6 @@ button {
 
 /* Responsive/Flexible */
 
-.inhalt,
 .container,
 .column
 {
@@ -104,7 +107,6 @@ font-size: 11pt;
   border: none;
 }
 
-
 .buttonPhoto {
   font-family: "Akzidenz Pro Regular";
   text-align: left;
@@ -149,6 +151,7 @@ font-size: 11pt;
 	        overflow-y: auto;
 }
 
+
 .graphGalleryPic, .photoGalleryPic {
         width: 90%;
         padding: 20px;
@@ -164,6 +167,10 @@ font-size: 11pt;
 /* Breakpoint für Desktop */
 
 @media (min-width: 61.25em) {
+
+      a {
+        display: block;
+      }
 
       .sideNavi {
         display: block;
@@ -204,6 +211,8 @@ font-size: 11pt;
           width: 100%;
         	padding-top: 4em;
         }
+
+
 
 }
 

@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline; 
+}
+
+
+@font-face {
+  font-family: "Akzidenz Pro Regular";
+  src: url("Schriften/Akzidenz Grotesk Pro Ext Regular.otf");
+}
+
+
+html {
+	font-family: "Akzidenz Pro Regular";
+	background: white;
+}
+
+h1, h2, h3 {
+	color:black;
+	position: fixed;
+}
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+	/** Unhide lightbox **/
+	display: block;
+}
+
+.logo {
+  width: 5em;
+  position: fixed;
+  fill: black;
+  padding-left: 2em;
+}
+
+.container {
+  flex-flow: column nowrap;
+  height: 100vh;
+  width: 100%;
+}
+
+.graphPicturesContainer {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, 20fr);
+	grid-gap: 1em;
+	padding-bottom: 10em;
+	padding-top: 7em;
+}
+
+.headline {
+	bottom: 0;
+	font-size: 2em;
+	padding: 0 0em 0em 1em;
+}
+
+
+.beschreibung {
+	bottom: 0;
+
+	padding: 0 2em 3em 2em;
+}
+
+
+h2 {
+	position: fixed;
+	right: 0;
+	color: black;
+	padding: 0.5em 0.5em 0em 0em;
+	font-size: 3em; 
+}
+
+.graph {
+	width: 100%;
+}
+
+
+@media (min-width: 61.25em) {
+
+.logo {
+          width: 10em;
+          position: fixed;
+          fill: black;
+          margin: 3% 0% 0% 5%;
+        }
+
+.inhalt {
+	width: 100vw;
+	height: 100vh;
+	overflow-y: auto;
+}
+
+h2 {
+	position: fixed;
+	right: 0;
+	color: black;
+	padding: 0.5em 1em 0em 0em;
+	font-size: 4em; 
+}
+
+.headline { 
+	position: fixed;
+	color: black;
+    transform: translateX(-50%) translateY(-50%) rotate(270deg);
+    bottom: 25vh;
+    padding: 0 0 0 0;
+    padding-top: 4.5em;
+    left: 0;
+	font-size: 2vw;
+}
+
+.beschreibung {
+	position: fixed;
+	right: 0;
+	color: black;
+	line-height: 95%;
+	bottom: 4.5vh;
+	width: 30%;
+	padding: 1em 7em 3.5em 0em;
+	font-size: 0.7em;
+}
+
+.graphPicturesContainer {
+	display: grid;
+	width: 79%;
+	grid-template-columns: repeat(3, 20fr);
+	grid-gap: 1em;
+	padding: 5vw 10vw 5vw 10vw;
+}
+
+.graph {
+	width: 100%;
+}
+
+}
+
