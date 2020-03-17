@@ -6,6 +6,6 @@ Building my first own website.
 
 ## Next Step’ 
 
-* click on gallery-thumbnails opens up a lightbox-like site with details and more picture of the project
-* let logo and navigation float over gallery
-* add animations 
+* fix link anchors over pictures (too big)
+* add »contact« and »about« site
+* add animations
