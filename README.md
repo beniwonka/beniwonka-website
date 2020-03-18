@@ -5,5 +5,6 @@ Building my first own website.
 
 
 ## Next Step’ 
-  
+
+* text hover over thumbnails
 * add contact and about site 
