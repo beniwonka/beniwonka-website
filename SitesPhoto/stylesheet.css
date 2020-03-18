@@ -23,8 +23,13 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   src: url("Schriften/Akzidenz Grotesk Pro Ext Regular.otf");
 }
 
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 html {
+	cursor: cell;
 	font-family: "Akzidenz Pro Regular";
 	background: white;
 }
@@ -34,11 +39,14 @@ h1, h2, h3 {
 	position: fixed;
 }
 
+.inhalt {
+	animation-name: example;
+	animation-duration: 1s;
+}
+
 .lightbox {
-	/** Default lightbox to hidden */
 	display: none;
 
-	/** Position and style */
 	position: fixed;
 	z-index: 999;
 	width: 100%;
@@ -50,16 +58,13 @@ h1, h2, h3 {
 }
 
 .lightbox img {
-	/** Pad the lightbox image */
 	max-width: 90%;
 	max-height: 80%;
 	margin-top: 2%;
 }
 
 .lightbox:target {
-	/** Remove default browser outline */
 	outline: none;
-	/** Unhide lightbox **/
 	display: block;
 }
 
@@ -82,7 +87,7 @@ h1, h2, h3 {
 	grid-template-columns: repeat(2, 20fr);
 	grid-gap: 1em;
 	padding-bottom: 10em;
-	padding-top: 7em;
+	padding-top: 8em;
 }
 
 .headline {
@@ -91,10 +96,8 @@ h1, h2, h3 {
 	padding: 0 0em 0em 1em;
 }
 
-
 .beschreibung {
 	bottom: 0;
-
 	padding: 0 2em 3em 2em;
 }
 
@@ -111,15 +114,19 @@ h2 {
 	width: 100%;
 }
 
-
 @media (min-width: 61.25em) {
 
 .logo {
+		  cursor: cell;
           width: 10em;
           position: fixed;
-          fill: black;
-          margin: 3% 0% 0% 5%;
+          margin: 3%;
+          transition: transform .4s; 
         }
+
+.logo:hover {
+	transform: scale(1.04);
+}
 
 .inhalt {
 	width: 100vw;
@@ -128,11 +135,17 @@ h2 {
 }
 
 h2 {
+	cursor: cell;
 	position: fixed;
 	right: 0;
 	color: black;
 	padding: 0.5em 1em 0em 0em;
-	font-size: 4em; 
+	font-size: 4em;
+	transition: transform .4s; 
+}
+
+h2:hover {
+	transform: scale(1.04); 
 }
 
 .headline { 
@@ -153,21 +166,78 @@ h2 {
 	line-height: 95%;
 	bottom: 4.5vh;
 	width: 30%;
-	padding: 1em 7em 3.5em 0em;
+	padding: 1em 7em 0em 0em;
 	font-size: 0.7em;
 }
 
 .graphPicturesContainer {
 	display: grid;
 	width: 79%;
-	grid-template-columns: repeat(3, 20fr);
+	grid-template-columns: repeat(3, 10fr);
 	grid-gap: 1em;
 	padding: 5vw 10vw 5vw 10vw;
 }
 
 .graph {
 	width: 100%;
+	transition: transform .4s;
 }
+
+.graph:hover {
+          transform: scale(1.04);
+          }
+
+        .A {
+          grid-column-start: 2;
+          grid-row-start: 1;
+        }
+
+        .B {
+          grid-column-start: 3;
+          grid-row-start: 1;
+        }
+
+        .C {
+          grid-column-start: 1;
+          grid-row-start: 2;
+        }
+
+        .D {
+          grid-column-start: 3;
+          grid-row-start: 2;
+        }
+
+        .E {
+          grid-column-start: 1;
+          grid-row-start: 3;
+        }
+
+        .F {
+          grid-column-start: 2;
+          grid-row-start: 3;
+        }
+
+        .G {
+          grid-column-start: 3;
+          grid-row-start: 4;
+        }
+
+        .H {
+          grid-column-start: 1;
+          grid-row-start: 5;
+        }
+
+        .I {
+          grid-column-start: 3;
+          grid-row-start: 5;
+        }
+
+        .J {
+          grid-column-start: 2;
+          grid-row-start: 6;
+        }
+
+
 
 }
 
