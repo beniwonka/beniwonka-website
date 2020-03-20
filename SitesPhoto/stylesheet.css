@@ -124,7 +124,7 @@ h2 {
 @media (min-width: 540px) {
 
 .logo {
-          width: 8em;
+          width: 10em;
           position: fixed;
           fill: #151515;
           margin: 3%;
@@ -139,7 +139,17 @@ padding: 20vw 1vw 1vw 7vw;
 
 }
 
+h2 {
+	font-size: 4.5em;
 }
+
+
+h3 {
+	font-size: 1.3em;
+}
+
+}
+
 
 @media (min-width: 992px) {
 

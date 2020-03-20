@@ -99,18 +99,22 @@ h2 {
 @media (min-width: 540px) {
 
 .logo {
-          width: 8em;
+          width: 10em;
           position: fixed;
           margin: 3%;
         }
 
         .graphPicturesContainer {
 	position: fixed;
-	padding-top: 25%;
+	padding-top: 35%;
 }
 
 h3 {
 	font-size: 3.5vw;
+}
+
+h2 {
+	font-size: 4.5em;
 }
 
 }
