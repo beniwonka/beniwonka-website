@@ -32,7 +32,15 @@ html {
 	cursor: cell;
 	font-family: "Akzidenz Pro Regular";
 	background: #efefef;
+		  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+
 }
+
+::-webkit-scrollbar { 
+    display: none; 
+    }
+
 
 h1, h2, h3 {
 	color: #151515;
@@ -113,7 +121,27 @@ h2 {
 	width: 100%;
 }
 
-@media (min-width: 61.25em) {
+@media (min-width: 540px) {
+
+.logo {
+          width: 8em;
+          position: fixed;
+          fill: #151515;
+          margin: 3%;
+        }
+
+.graphPicturesContainer {
+	display: grid;
+	width: 87%;
+	grid-template-columns: repeat(2, 20fr);
+	grid-gap: 1em;
+padding: 20vw 1vw 1vw 7vw;
+
+}
+
+}
+
+@media (min-width: 992px) {
 
 .logo {
 		  cursor: cell;

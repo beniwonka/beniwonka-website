@@ -41,6 +41,8 @@ html {
   to {opacity: 1;}
 }
 
+@media (min-width: 319px) {
+
 .inhalt {
 	animation-name: example;
 	animation-duration: 1s;
@@ -59,7 +61,7 @@ html {
 }
 
 h3 {
-	font-size: 2vw;
+	font-size: 5vw;
 }
 
 h2 {
@@ -72,6 +74,7 @@ h2 {
 
 .graphPicturesContainer {
 	position: fixed;
+	padding-top: 50%;
 }
 
 .links {
@@ -84,13 +87,40 @@ h2 {
 
 .graphPicturesContainer {
 	display: grid;
-	grid-template-columns: repeat(2, 8fr);
+	grid-template-columns: repeat(1, 8fr);
 	grid-gap: 1em;
 	padding-left: 2em;
 	margin: 0% 0% 4.5% 4.5%;
 }
 
-@media (min-width: 61.25em) {
+
+}
+
+@media (min-width: 540px) {
+
+.logo {
+          width: 8em;
+          position: fixed;
+          margin: 3%;
+        }
+
+        .graphPicturesContainer {
+	position: fixed;
+	padding-top: 25%;
+}
+
+h3 {
+	font-size: 3.5vw;
+}
+
+}
+
+
+@media (min-width: 992px) {
+
+	h3 {
+	font-size: 2vw;
+}
 
 	.logo {
 		  cursor: cell;
@@ -101,7 +131,12 @@ h2 {
         }
 
 .graphPicturesContainer {
-	bottom: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 8fr);
+	grid-gap: 1em;
+	padding-left: 2em;
+	margin: 0% 0% 4.5% 4.5%;
+	bottom:0;
 }
 
         .A {

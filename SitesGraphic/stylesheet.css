@@ -32,7 +32,22 @@ html {
 	cursor: cell;
 	font-family: "Akzidenz Pro Regular";
 	background: #151515;
+	  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+
 }
+
+::-webkit-scrollbar { 
+    display: none; 
+    }
+
+
+@media (min-width: 319px) {
+
+
+::-webkit-scrollbar { 
+    display: none; 
+    }
 
 h1, h2, h3 {
 	color:#efefef;
@@ -114,7 +129,50 @@ h2 {
 	width: 100%;
 }
 
-@media (min-width: 61.25em) {
+}
+
+
+@media (min-width: 540px) {
+
+.logo {
+          width: 8em;
+          position: fixed;
+          fill: #151515;
+          margin: 3%;
+        }
+
+.graphPicturesContainer {
+	display: grid;
+	width: 87%;
+	grid-template-columns: repeat(2, 20fr);
+	grid-gap: 1em;
+padding: 20vw 1vw 1vw 7vw;
+
+}
+
+}
+
+
+@media (min-width: 540px) {
+
+.logo {
+          width: 8em;
+          position: fixed;
+          fill: #efefef;
+          margin: 3%;
+        }
+
+}
+
+@media (min-width: 992px) {
+
+.graphPicturesContainer {
+	display: grid;
+	width: 79%;
+	grid-template-columns: repeat(3, 10fr);
+	grid-gap: 1em;
+	padding: 5vw 10vw 5vw 10vw;
+}
 
 .logo {
 		  cursor: cell;
@@ -168,14 +226,6 @@ h2:hover {
 	width: 30%;
 	padding: 1em 4em 0em 0em;
 	font-size: 1.5em;
-}
-
-.graphPicturesContainer {
-	display: grid;
-	width: 79%;
-	grid-template-columns: repeat(3, 10fr);
-	grid-gap: 1em;
-	padding: 5vw 10vw 5vw 10vw;
 }
 
 .graph {

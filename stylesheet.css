@@ -245,7 +245,7 @@ font-size: 11pt;
 
 /* Breakpoint für Desktop */
 
-@media only screen and (min-width: 541px) {
+@media only screen and (min-width: 992px) {
 
   .side {
     writing-mode: vertical-lr;
