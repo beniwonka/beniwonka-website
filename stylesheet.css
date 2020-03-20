@@ -1,6 +1,8 @@
 
 /* Main */
 
+@media (min-width: 319px) {
+
 @font-face {
   font-family: "Akzidenz Pro Regular";
   src: url("Schriften/Akzidenz Grotesk Pro Ext Regular.otf");
@@ -15,6 +17,7 @@
   from {opacity: 0.5;}
   to {opacity: 1;}
 }
+
 
 
 html {
@@ -214,9 +217,11 @@ font-size: 11pt;
     display: none; 
     }
 
+}
+
 /* Breakpoint für Desktop */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
 
   .side {
     writing-mode: vertical-lr;
