@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline; 
+}
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+html {
+	font-family: "Akzidenz Pro Regular";
+	background: #151515;
+	color: #efefef;
+	height: 100vh;
+	width: 100vw;
+}
+
+
+@font-face {
+  font-family: "Akzidenz Pro Regular";
+  src: url("Schriften/Akzidenz Grotesk Pro Ext Regular.otf");
+}
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.inhalt {
+	animation-name: example;
+	animation-duration: 1s;
+}
+
+.logo {
+  width: 5em;
+  position: fixed;
+  fill: #efefef;
+  padding-left: 2em;
+  transition: transform .4s; 
+}
+
+.logo:hover {
+	transform: scale(1.04);
+}
+
+h3 {
+	font-size: 2vw;
+}
+
+h2 {
+	position: fixed;
+	right: 0;
+	color: #efefef;
+	padding: 0.5em 0.5em 0em 0em;
+	font-size: 3em; 
+}
+
+.graphPicturesContainer {
+	position: fixed;
+}
+
+.links {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-size: 3vw;
+	margin: 4.5%;
+}
+
+.graphPicturesContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 8fr);
+	grid-gap: 1em;
+	padding-left: 2em;
+	margin: 0% 0% 4.5% 4.5%;
+}
+
+@media (min-width: 61.25em) {
+
+	.logo {
+		  cursor: cell;
+          width: 10em;
+          position: fixed;
+          margin: 3%;
+          transition: transform .4s; 
+        }
+
+.graphPicturesContainer {
+	bottom: 0;
+}
+
+        .A {
+        	padding-bottom: 1em;
+        	white-space: nowrap;
+          grid-column-start: 1;
+          grid-row-start: 1;
+        }
+
+        .B {
+        	white-space: nowrap;
+        	padding-bottom: 1em;
+          grid-column-start: 2;
+          grid-row-start: 1;
+        }
+
+        .C {
+        	white-space: nowrap;
+        	padding-bottom: 1em;
+          grid-column-start: 1;
+          grid-row-start: 2;
+        }
+
+        .D {
+        	white-space: nowrap;
+          grid-column-start: 1;
+          grid-row-start: 3;
+        }
+
+h2 {
+	cursor: cell;
+	position: fixed;
+	right: 0;
+	color: #efefef;
+	padding: 0.5em 1em 0em 0em;
+	font-size: 4em;
+	transition: transform .4s; 
+}
+
+h2:hover {
+	transform: scale(1.04); 
+}
+}
+

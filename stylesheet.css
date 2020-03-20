@@ -6,6 +6,16 @@
   src: url("Schriften/Akzidenz Grotesk Pro Ext Regular.otf");
 }
 
+@font-face {
+  font-family: "Akzidenz Pro Medium";
+  src: url("Schriften/AkzidenzGrotesk-MediumExtended.otf");
+}
+
+@keyframes example {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+}
+
 
 html {
   cursor: cell;
@@ -21,16 +31,15 @@ body {
   border: 0;
 }
 
-
 .logo {
   width: 5em;
   position: fixed;
-  fill: white;
+  fill: #efefef;
   padding-left: 2em;
 }
 
 h1 {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 h3 {
@@ -41,23 +50,43 @@ button {
   cursor:cell;
 }
 
+.sideLink {
+    color: black;
+    text-decoration-line: none;
+}
+
+.sideLinkMobile {
+    color: white;
+    text-decoration-line: none;
+}
+
 
 /* Responsive/Flexible */
 
 .container,
 .column
 {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
   display: flex;
-  flex: 1 100%;
+  -webkit-box-flex: 1 100%;
+  -webkit-flex: 1 100%;
+  -ms-flex: 1 100%;
+  flex: 1 100%; 
 }
 
 /* Anordnung  */
 
 .container {
   flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
   height: 100vh;
   width: 100%;
 }
+
   .column {
     padding: 2% 0%;
   }
@@ -67,27 +96,48 @@ button {
 #graphicContainer {
   display: flex;
   justify-content: center;
-  background: black;
-  color:white;
+  background: #151515;
+  color:#efefef;
+  max-height: 50vh; 
 }
 
 #photographyContainer {
   display: flex;
   justify-content: center;
-  background: white;
-  color: black;
+  background: #efefef;
+  color: #151515;
+  max-height: 50vh; 
 }
 
 
 /* Navigation */
 
+hr {
+  visibility: hidden;#
+}
+
+.underPhoto {
+  visibility: hidden;
+  }
+
 .side { 
-writing-mode: vertical-lr;
-text-orientation: sideways;
+	font-family: "Akzidenz Pro Regular";
+    writing-mode: horizontal-tb;
+    text-orientation: unset;
    }
 
 .sideNavi {
-display: none;
+  visibility: hidden;
+  padding-top: 1em;
+  position: fixed;
+  right: 1.2em;
+}
+
+.sideNaviMobile {
+  visibility: visible;
+  position: fixed;
+  top: 2.3em;
+  right:1.3em;
 }
 
 .naviHead {
@@ -102,7 +152,7 @@ font-size: 11pt;
   font-family: "Akzidenz Pro Regular";
   text-align: left;
   font-size: 0.5em;
-  color: white;
+  color: #efefef;
   background: none;
   border: none;
 }
@@ -111,16 +161,15 @@ font-size: 11pt;
   font-family: "Akzidenz Pro Regular";
   text-align: left;
   font-size: 0.5em;
-  color: black;
+  color: #151515;
   background: none;
   border: none;
 }
 
 .activeGraph, .activePhoto {
-  font-family: "Akzidenz Pro Regular";
+  font-family: "Akzidenz Pro Medium";
   text-align: left;
   font-size: 0.5em;
-  color: grey;
   background: none;
   border: none;
 }
@@ -147,6 +196,7 @@ font-size: 11pt;
           display: grid;
           grid-gap: 5em;
           padding-left: 2em;
+          padding: 2em 0em 2em 2em;
           grid-template-columns: repeat(1, 10fr);
 	        overflow-y: auto;
 }
@@ -155,18 +205,34 @@ font-size: 11pt;
         width: 90%;
         }
 
-.photoContent::-webkit-scrollbar { width: 0 !important }
-.photoContent { overflow: -moz-scrollbars-none; }
-.photoContent { -ms-overflow-style: none; }
-.graphContent::-webkit-scrollbar { width: 0 !important }
-.graphContent { overflow: -moz-scrollbars-none; }
-.graphContent { -ms-overflow-style: none; }
+.photoContent, .graphContent {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+    }
 
 /* Breakpoint für Desktop */
 
 @media (min-width: 61.25em) {
 
+  .side {
+    writing-mode: vertical-lr;
+text-orientation: sideways;
+transition: transform .2s;
+  }
+
+ .side:hover {
+  transform: scale(1.1);
+ }
+  .sideNaviMobile {
+  visibility: hidden;
+}
+
       .sideNavi {
+        visibility: visible;
         display: block;
         position: absolute;
         top: 40%;
@@ -185,7 +251,7 @@ font-size: 11pt;
         .logo {
           width: 10em;
           position: fixed;
-          fill: white;
+          fill: #efefef;
           margin: 3%;
         }
 
@@ -201,6 +267,10 @@ font-size: 11pt;
           grid-template-columns: repeat(2, 20fr);
         }
 
+        #photographyContainer, #graphicContainer {
+        	max-height: 100vh;
+        }
+
         .graphGalleryPic, .photoGalleryPic {
         	width: 100%;
           transition: transform .2s;
@@ -210,10 +280,6 @@ font-size: 11pt;
           transform: scale(1.04);
           }
 
-          .buttonGraph:hover, .buttonPhoto:hover, .activeGraph:hover, .activePhoto:hover {
-           text-decoration-line: underline;
-          }
-
         .graphContent, .photoContent {
         	padding-top: 4em;
         	padding-left: 2em;
@@ -221,6 +287,8 @@ font-size: 11pt;
           padding-bottom: 4em;
 
         }
+
+        /* Grid-Anreihung */
 
         .AP {
           grid-column-start: 1;
@@ -251,6 +319,59 @@ font-size: 11pt;
           grid-column-start: 1;
           grid-row-start: 4;
         }
+
+.all:hover ~ hr {
+  visibility: visible;
+  margin-left: 1%;
+}
+
+.allph:hover ~ hr {
+  visibility: visible;
+  margin-left: 2%;
+}
+
+.art:hover ~ hr {
+  visibility: visible;
+  margin-left: 27%;
+}
+
+.peeps:hover ~ hr {
+  visibility: visible;
+  margin-left: 30%;
+}
+
+.edit:hover ~ hr {
+  visibility: visible;
+  margin-left: 58%;
+}
+
+.docu:hover ~ hr {
+  visibility: visible;
+  margin-left: 71%;
+}
+
+.ux:hover ~ hr {
+  visibility: visible;
+  margin-left: 87%;
+}
+
+hr {
+  height: .05rem;
+  width: 10%;
+  margin: 0;
+  background: white;
+  border: none;
+  transition: .3s ease-in-out;
+}
+
+.underPhoto {
+  height: .05rem;
+  width: 10%;
+  margin: 0;
+  background: black;
+  border: none;
+  transition: .3s ease-in-out;
+}
 
 }
 

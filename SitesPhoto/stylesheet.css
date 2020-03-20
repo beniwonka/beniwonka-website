@@ -31,11 +31,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 html {
 	cursor: cell;
 	font-family: "Akzidenz Pro Regular";
-	background: white;
+	background: #efefef;
 }
 
 h1, h2, h3 {
-	color:black;
+	color: #151515;
 	position: fixed;
 }
 
@@ -46,7 +46,6 @@ h1, h2, h3 {
 
 .lightbox {
 	display: none;
-
 	position: fixed;
 	z-index: 999;
 	width: 100%;
@@ -54,7 +53,7 @@ h1, h2, h3 {
 	text-align: center;
 	top: 0;
 	left: 0;
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,255,255,0.6);
 }
 
 .lightbox img {
@@ -71,7 +70,7 @@ h1, h2, h3 {
 .logo {
   width: 5em;
   position: fixed;
-  fill: black;
+  fill: #151515;
   padding-left: 2em;
 }
 
@@ -105,7 +104,7 @@ h1, h2, h3 {
 h2 {
 	position: fixed;
 	right: 0;
-	color: black;
+	color: #151515;
 	padding: 0.5em 0.5em 0em 0em;
 	font-size: 3em; 
 }
@@ -138,7 +137,7 @@ h2 {
 	cursor: cell;
 	position: fixed;
 	right: 0;
-	color: black;
+	color: #151515;
 	padding: 0.5em 1em 0em 0em;
 	font-size: 4em;
 	transition: transform .4s; 
@@ -150,7 +149,7 @@ h2:hover {
 
 .headline { 
 	position: fixed;
-	color: black;
+	color: #151515;
     transform: translateX(-50%) translateY(-50%) rotate(270deg);
     bottom: 25vh;
     padding: 0 0 0 0;
@@ -162,12 +161,12 @@ h2:hover {
 .beschreibung {
 	position: fixed;
 	right: 0;
-	color: black;
+	color: #151515;
 	line-height: 95%;
 	bottom: 4.5vh;
 	width: 30%;
-	padding: 1em 7em 0em 0em;
-	font-size: 0.7em;
+	padding: 1em 4em 0em 0em;
+	font-size: 1.5em;
 }
 
 .graphPicturesContainer {
