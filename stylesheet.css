@@ -219,6 +219,30 @@ font-size: 11pt;
 
 }
 
+@media (min-width: 540px) {
+
+.logo {
+          width: 8em;
+          position: fixed;
+          fill: #efefef;
+          margin: 3%;
+        }
+
+.graphContent, .photoContent {
+          display: grid;
+          grid-gap: 3em;
+          padding: 0% 11% 0% 8%;
+          grid-template-columns: repeat(2, 20fr);
+        }
+
+.sideNaviMobile {
+  position: fixed;
+  top: 2.3em;
+  right:3.5em;
+}
+
+}
+
 /* Breakpoint für Desktop */
 
 @media only screen and (min-width: 992px) {
