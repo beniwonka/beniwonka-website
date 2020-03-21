@@ -49,7 +49,7 @@ html {
 }
 
 .logo {
-  width: 5em;
+  width: 8em;
   position: fixed;
   fill: #efefef;
   padding-left: 2em;
@@ -69,7 +69,7 @@ h2 {
 	right: 0;
 	color: #efefef;
 	padding: 0.5em 0.5em 0em 0em;
-	font-size: 3em; 
+	font-size: 4em; 
 }
 
 .graphPicturesContainer {
@@ -81,7 +81,7 @@ h2 {
 	position: fixed;
 	bottom: 0;
 	right: 0;
-	font-size: 3vw;
+	font-size: 6vw;
 	margin: 4.5%;
 }
 
@@ -90,7 +90,7 @@ h2 {
 	grid-template-columns: repeat(1, 8fr);
 	grid-gap: 1em;
 	padding-left: 2em;
-	margin: 0% 0% 4.5% 4.5%;
+	top: 1em;
 }
 
 
@@ -110,16 +110,18 @@ h2 {
 
         .graphPicturesContainer {
 	position: fixed;
-	padding-top: 35%;
+	padding-top: 20vh;
 }
 
 h3 {
-	font-size: 4.5vw;
+	font-size: 4vw;
 }
 
-
+h2 {
+	font-size: 4em;
 }
 
+}
 
 @media (min-width: 992px) {
 
@@ -128,6 +130,7 @@ h3 {
 }
 
 .links {
+	padding-top: 20%;
 	font-size: 3vw;
 }
 
@@ -143,9 +146,9 @@ h3 {
 	display: grid;
 	grid-template-columns: repeat(2, 8fr);
 	grid-gap: 1em;
-	padding-left: 2em;
-	margin: 0% 0% 4.5% 4.5%;
-	bottom:0;
+	padding-left: 4em;
+	padding-bottom: 1em;
+	padding-top: 30vh;
 }
 
         .A {

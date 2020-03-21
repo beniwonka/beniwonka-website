@@ -28,6 +28,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   to {opacity: 1;}
 }
 
+@keyframes zoomIn {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+
 html {
 	cursor: cell;
 	font-family: "Akzidenz Pro Regular";
@@ -73,8 +78,10 @@ h1, h2, h3 {
 
 .lightbox img {
 	max-width: 90%;
-	max-height: 80%;
-	margin-top: 2%;
+	max-height: 90%;
+	margin-top: 3%;
+	animation-name: zoomIn;
+	animation-duration: 0.4s;
 }
 
 .lightbox:target {
@@ -83,7 +90,7 @@ h1, h2, h3 {
 }
 
 .logo {
-  width: 5em;
+  width: 8em;
   position: fixed;
   fill: #efefef;
   padding-left: 2em;
@@ -121,7 +128,7 @@ h2 {
 	right: 0;
 	color: #efefef;
 	padding: 0.5em 0.5em 0em 0em;
-	font-size: 3em; 
+	font-size: 4em; 
 }
 
 
