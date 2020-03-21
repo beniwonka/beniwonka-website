@@ -257,7 +257,7 @@ font-size: 1.2em;
         }
 
   .naviHead {
-font-size: 1em;
+font-size: 1.5em;
 }
 
 .naviPhoto {
@@ -271,7 +271,7 @@ font-size: 1em;
 }
 
 .logo {
-          width: 8em;
+          width: 10em;
           position: fixed;
           fill: #efefef;
           margin: 3%;
@@ -286,13 +286,13 @@ font-size: 1em;
 
 .sideNaviMobile {
   position: fixed;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .buttonGraph {
   font-family: "Akzidenz Pro Regular";
   text-align: left;
-  font-size: 0.8em;
+  font-size: 1.2em;
   color: #efefef;
   background: none;
   border: none;
@@ -301,7 +301,7 @@ font-size: 1em;
 .buttonPhoto {
   font-family: "Akzidenz Pro Regular";
   text-align: left;
-  font-size: 0.8em;
+  font-size: 1.2em;
   color: #151515;
   background: none;
   border: none;
@@ -310,7 +310,7 @@ font-size: 1em;
 .activeGraph, .activePhoto {
   font-family: "Akzidenz Pro Medium";
   text-align: left;
-  font-size: 0.8em;
+  font-size: 1.2em;
   background: none;
   border: none;
 }
