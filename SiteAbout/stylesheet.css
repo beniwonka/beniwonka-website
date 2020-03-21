@@ -98,6 +98,10 @@ h2 {
 
 @media (min-width: 540px) {
 
+.links {
+	font-size: 6vw;
+}
+
 .logo {
           width: 10em;
           position: fixed;
@@ -110,12 +114,9 @@ h2 {
 }
 
 h3 {
-	font-size: 3.5vw;
+	font-size: 4.5vw;
 }
 
-h2 {
-	font-size: 4.5em;
-}
 
 }
 
@@ -124,6 +125,10 @@ h2 {
 
 	h3 {
 	font-size: 2vw;
+}
+
+.links {
+	font-size: 3vw;
 }
 
 	.logo {

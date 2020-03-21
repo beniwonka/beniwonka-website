@@ -123,6 +123,12 @@ h2 {
 
 @media (min-width: 540px) {
 
+	.beschreibung {
+		font-size: 1.4em;
+	bottom: 0;
+	padding: 0 9em 3em 2em;
+}
+
 .logo {
           width: 10em;
           position: fixed;
@@ -144,14 +150,18 @@ h2 {
 }
 
 
-h3 {
-	font-size: 1.3em;
-}
-
 }
 
 
 @media (min-width: 992px) {
+
+.graphPicturesContainer {
+	display: grid;
+	width: 79%;
+	grid-template-columns: repeat(3, 10fr);
+	grid-gap: 1em;
+	padding: 5vw 10vw 5vw 10vw;
+}
 
 .logo {
 		  cursor: cell;

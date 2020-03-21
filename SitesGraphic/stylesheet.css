@@ -134,6 +134,12 @@ h2 {
 
 @media (min-width: 540px) {
 
+	.beschreibung {
+		font-size: 1.4em;
+	bottom: 0;
+	padding: 0 9em 3em 2em;
+}
+
 .logo {
           width: 10em;
           position: fixed;
@@ -155,14 +161,12 @@ h2 {
 }
 
 
-h3 {
-	font-size: 1.3em;
-}
-
 }
 
 
 @media (min-width: 992px) {
+
+
 
 .graphPicturesContainer {
 	display: grid;
@@ -210,9 +214,9 @@ h2:hover {
     transform: translateX(-50%) translateY(-50%) rotate(270deg);
     bottom: 25vh;
     padding: 0 0 0 0;
-    padding-top: 4.5em;
+    padding-top: 4em;
     left: 0;
-	font-size: 2vw;
+	font-size: 2.5vw;
 }
 
 .beschreibung {

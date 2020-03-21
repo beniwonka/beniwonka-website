@@ -221,6 +221,11 @@ font-size: 11pt;
 
 @media (min-width: 540px) {
 
+  .naviHead {
+font-size: 1.8em;
+}
+
+
 .logo {
           width: 10em;
           position: fixed;
@@ -237,13 +242,25 @@ font-size: 11pt;
 
 .sideNaviMobile {
   position: fixed;
-  top: 2.3em;
-  right:3.5em;
-  transform: scale(1.5)
+  font-size: 2em;
 }
 
- .naviPhoto, .naviGraph {
-  transform: scale(1.5);
+.buttonGraph {
+  font-family: "Akzidenz Pro Regular";
+  text-align: left;
+  font-size: 1.3em;
+  color: #efefef;
+  background: none;
+  border: none;
+}
+
+.buttonPhoto {
+  font-family: "Akzidenz Pro Regular";
+  text-align: left;
+  font-size: 1.3em;
+  color: #151515;
+  background: none;
+  border: none;
 }
 
 }
@@ -251,6 +268,15 @@ font-size: 11pt;
 /* Breakpoint für Desktop */
 
 @media only screen and (min-width: 992px) {
+
+    .naviHead {
+font-size: 11pt;
+}
+
+
+.buttonPhoto, .buttonGraph {
+  font-size: 0.5em;
+}
 
   .side {
     writing-mode: vertical-lr;
