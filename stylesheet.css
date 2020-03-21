@@ -292,6 +292,7 @@ transition: transform .2s;
         .naviPhoto, .naviGraph {
         bottom: 0px;
         padding-bottom: 4em;
+        transform: scale(1);
         }
 
         .graphContent, .photoContent {
