@@ -142,13 +142,18 @@ h2 {
 @media (min-width: 540px) {
 
 	.beschreibung {
-		font-size: 1.4em;
+		font-size: 2em;
 	bottom: 0;
-	padding: 0 9em 3em 2em;
+	padding: 0em 2em 4.5em 2em;
 }
 
+.headline {
+	font-size: 3.5em;
+}
+
+
 .logo {
-          width: 10em;
+          width: 15em;
           position: fixed;
           fill: #efefef;
           margin: 3%;
@@ -156,15 +161,15 @@ h2 {
 
 .graphPicturesContainer {
 	display: grid;
-	width: 87%;
-	grid-template-columns: repeat(2, 20fr);
+	width: 95%;
+	grid-template-columns: repeat(1, 20fr);
 	grid-gap: 1em;
-padding: 20vw 1vw 1vw 7vw;
+padding: 30vw 0vw 10vw 2.5vw;
 
 }
 
 h2 {
-	font-size: 4.5em;
+	font-size: 6em;
 }
 
 
