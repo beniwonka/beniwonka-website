@@ -245,8 +245,30 @@ font-size: 1.2em;
 
         .E {
           grid-column-start: 1;
+          grid-row-start: 3;
+        }
+
+        .F {
+          grid-column-start: 1;
           grid-row-start: 4;
         }
+
+        .G {
+          grid-column-start: 2;
+          grid-row-start: 4;
+        }
+
+        .H {
+          grid-column-start: 2;
+          grid-row-start: 5;
+        }
+
+
+        .I {
+          grid-column-start: 1;
+          grid-row-start: 5;
+        }
+
 
 }
 
@@ -321,6 +343,7 @@ font-size: 2em;
 
 @media only screen and (min-width: 992px) {
 
+
     .naviHead {
 font-size: 11pt;
 }
@@ -369,7 +392,7 @@ transition: transform .2s;
         }
 
         .logo {
-          width: 10em;
+          width: 15%;
           position: fixed;
           fill: #efefef;
           margin: 3%;
@@ -383,8 +406,8 @@ transition: transform .2s;
 
         .graphContent, .photoContent {
           display: grid;
-          grid-gap: 3em;
-          padding: 0% 9% 0% 4%;
+          grid-gap: 1em;
+         
           grid-template-columns: repeat(2, 20fr);
         }
 
@@ -401,10 +424,18 @@ transition: transform .2s;
           transform: scale(1.04);
           }
 
-        .graphContent, .photoContent {
-        	padding-top: 4em;
+        .graphContent {
+        	padding-top: 2em;
         	padding-left: 2em;
         	padding-right: 1em;
+          padding-bottom: 4em;
+
+        }
+
+         .photoContent {
+          padding-top: 2em;
+          padding-left: 2em;
+          padding-right: 1em;
           padding-bottom: 4em;
 
         }
@@ -414,7 +445,7 @@ transition: transform .2s;
 
 .all:hover ~ hr {
   visibility: visible;
-  margin-left: 1%;
+  margin-left: 2%;
 }
 
 .allph:hover ~ hr {
@@ -424,7 +455,7 @@ transition: transform .2s;
 
 .art:hover ~ hr {
   visibility: visible;
-  margin-left: 27%;
+  margin-left: 38%;
 }
 
 .peeps:hover ~ hr {
@@ -434,7 +465,7 @@ transition: transform .2s;
 
 .edit:hover ~ hr {
   visibility: visible;
-  margin-left: 58%;
+  margin-left: 80%;
 }
 
 .docu:hover ~ hr {
@@ -442,10 +473,6 @@ transition: transform .2s;
   margin-left: 71%;
 }
 
-.ux:hover ~ hr {
-  visibility: visible;
-  margin-left: 87%;
-}
 
 hr {
   height: .05rem;

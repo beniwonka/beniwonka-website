@@ -77,8 +77,8 @@ h1, h2, h3 {
 }
 
 .lightbox img {
-	max-width: 90%;
-	max-height: 90%;
+	max-width: 95%;
+	max-height: 80%;
 	margin-top: 3%;
 	animation-name: zoomIn;
 	animation-duration: 0.4s;
@@ -162,7 +162,7 @@ h2 {
 .graphPicturesContainer {
 	display: grid;
 	width: 95%;
-	grid-template-columns: repeat(1, 20fr);
+	grid-template-columns: repeat(2, 20fr);
 	grid-gap: 1em;
 padding: 30vw 0vw 10vw 2.5vw;
 
@@ -190,7 +190,7 @@ h2 {
 
 .logo {
 		  cursor: cell;
-          width: 10em;
+          width: 15%;
           position: fixed;
           margin: 3%;
           transition: transform .4s; 

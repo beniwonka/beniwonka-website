@@ -52,6 +52,10 @@ h1, h2, h3 {
 	position: fixed;
 }
 
+h3 a {
+	color: #151515;
+}
+
 .inhalt {
 	animation-name: example;
 	animation-duration: 1s;
@@ -150,7 +154,7 @@ h2 {
 .graphPicturesContainer {
 	display: grid;
 	width: 95%;
-	grid-template-columns: repeat(1, 20fr);
+	grid-template-columns: repeat(2, 20fr);
 	grid-gap: 1em;
 padding: 30vw 0vw 10vw 2.5vw;
 
@@ -176,7 +180,7 @@ h2 {
 
 .logo {
 		  cursor: cell;
-          width: 10em;
+          width: 15%;
           position: fixed;
           margin: 3%;
           transition: transform .4s; 

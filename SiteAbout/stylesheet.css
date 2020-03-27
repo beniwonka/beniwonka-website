@@ -30,6 +30,20 @@ html {
 	width: 100vw;
 }
 
+h5 {
+	margin: 0;
+}
+
+h5 a {
+	font-size: 0.3em;
+	color: #efefef;
+}
+
+h4 a {
+	text-decoration: none;
+	color: #efefef;
+}
+
 
 @font-face {
   font-family: "Akzidenz Pro Regular";
@@ -110,7 +124,7 @@ h2 {
 
         .graphPicturesContainer {
 	position: fixed;
-	padding-top: 20vh;
+	padding-top: 25vh;
 }
 
 h3 {
@@ -136,7 +150,7 @@ h2 {
 
 	.logo {
 		  cursor: cell;
-          width: 10em;
+          width: 15%;
           position: fixed;
           margin: 3%;
           transition: transform .4s; 
