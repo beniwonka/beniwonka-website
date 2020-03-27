@@ -2,9 +2,3 @@
 
 Building my first own website. 
 [how it looks right now](https://beniwonka.github.io/beniwonka-website/)
-
-
-## Last Step’ 
-
-* adjust mobile view
-
