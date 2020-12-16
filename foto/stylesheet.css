@@ -1,0 +1,305 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline; 
+}
+
+
+@font-face {
+  font-family: "Akzidenz Pro Regular";
+  src: url("/Schriften/TomatoGrotesk-Regular.otf");
+}
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+
+html {
+	cursor: cell;
+	font-family: "Akzidenz Pro Regular";
+	background: #efefef;
+		  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+    }
+
+
+h1, h2, h3 {
+	color: #151515;
+	position: fixed;
+}
+
+h3 a {
+	color: #151515;
+}
+
+.inhalt {
+	animation-name: example;
+	animation-duration: 1s;
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.6);
+}
+
+.lightbox img {
+	max-width: 90%;
+	max-height: 90%;
+	margin-top: 3%;
+	animation-name: zoomIn;
+	animation-duration: 0.4s;
+}
+
+.lightbox:target {
+	outline: none;
+	display: block;
+}
+
+.logo {
+  width: 8em;
+  position: fixed;
+  fill: #151515;
+  padding-left: 2em;
+}
+
+.container {
+  flex-flow: column nowrap;
+  height: 100vh;
+  width: 100%;
+}
+
+.graphPicturesContainer {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, 20fr);
+	grid-gap: 1em;
+	padding-bottom: 10em;
+	padding-top: 8em;
+}
+
+.headline {
+	bottom: 0;
+	font-size: 2em;
+	padding: 0 0em 0em 1em;
+}
+
+.beschreibung {
+	bottom: 0;
+	padding: 0 2em 3em 2em;
+}
+
+
+h2 {
+	position: fixed;
+	right: 0;
+	color: #151515;
+	padding: 0.5em 0.5em 0em 0em;
+	font-size: 4em; 
+}
+
+.graph {
+	width: 100%;
+}
+
+@media (min-width: 540px) {
+
+	.beschreibung {
+	font-size: 2em;
+	bottom: 0;
+	padding: 0em 2em 4.5em 2em;
+}
+
+.headline {
+	font-size: 3.5em;
+}
+
+.logo {
+          width: 15em;
+          position: fixed;
+          fill: #151515;
+          margin: 5.2%;
+        }
+
+.graphPicturesContainer {
+	display: grid;
+	width: 95%;
+	grid-template-columns: repeat(2, 20fr);
+	grid-gap: 1em;
+padding: 30vw 0vw 10vw 2.5vw;
+
+}
+
+h2 {
+	font-size: 6em;
+}
+
+
+}
+
+
+@media (min-width: 992px) {
+
+.graphPicturesContainer {
+	display: grid;
+	width: 79%;
+	grid-template-columns: repeat(3, 10fr);
+	grid-gap: 1em;
+	padding: 5vw 10vw 5vw 10vw;
+}
+
+.logo {
+		  cursor: cell;
+          width: 20%;
+          position: fixed;
+          margin: 5.1em 0em 0em 1.5em;
+          transition: transform .4s; 
+        }
+
+.logo:hover {
+	transform: scale(1.04);
+}
+
+.inhalt {
+	width: 100vw;
+	height: 100vh;
+	overflow-y: auto;
+}
+
+h2 {
+	cursor: cell;
+	position: fixed;
+	right: 0;
+	color: #151515;
+	padding: 0.5em 1em 0em 0em;
+	font-size: 4em;
+	transition: transform .4s; 
+}
+
+h2:hover {
+	transform: scale(1.04); 
+}
+
+.headline { 
+	position: fixed;
+	color: #151515;
+    transform: translateX(-50%) translateY(-50%) rotate(270deg);
+    bottom: 25vh;
+    padding: 0 0 0 0;
+    padding-top: 4.5em;
+    left: 0;
+	font-size: 2vw;
+}
+
+.beschreibung {
+	position: fixed;
+	right: 0;
+	color: #151515;
+	line-height: 95%;
+	bottom: 4.5vh;
+	width: 30%;
+	padding: 1em 4em 0em 0em;
+	font-size: 1.5em;
+}
+
+.graphPicturesContainer {
+	display: grid;
+	width: 79%;
+	grid-template-columns: repeat(3, 10fr);
+	grid-gap: 1em;
+	padding: 5vw 10vw 5vw 10vw;
+}
+
+.graph {
+	width: 100%;
+	transition: transform .4s;
+}
+
+.graph:hover {
+          transform: scale(1.04);
+          }
+
+        .A {
+          grid-column-start: 2;
+          grid-row-start: 1;
+        }
+
+        .B {
+          grid-column-start: 3;
+          grid-row-start: 1;
+        }
+
+        .C {
+          grid-column-start: 1;
+          grid-row-start: 2;
+        }
+
+        .D {
+          grid-column-start: 3;
+          grid-row-start: 2;
+        }
+
+        .E {
+          grid-column-start: 1;
+          grid-row-start: 3;
+        }
+
+        .F {
+          grid-column-start: 2;
+          grid-row-start: 3;
+        }
+
+        .G {
+          grid-column-start: 3;
+          grid-row-start: 4;
+        }
+
+        .H {
+          grid-column-start: 1;
+          grid-row-start: 5;
+        }
+
+        .I {
+          grid-column-start: 3;
+          grid-row-start: 5;
+        }
+
+        .J {
+          grid-column-start: 2;
+          grid-row-start: 6;
+        }
+
+
+
+}
+

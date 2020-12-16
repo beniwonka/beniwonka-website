@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Akzidenz Pro Regular";
-  src: url("Schriften/Akzidenz Grotesk Pro Ext Regular.otf");
+  src: url("Schriften/TomatoGrotesk-Regular.otf");
 }
 
 @font-face {
   font-family: "Akzidenz Pro Medium";
-  src: url("Schriften/AkzidenzGrotesk-MediumExtended.otf");
+  src: url("Schriften/TomatoGrotesk-SemiBold.otf");
 }
 
 @keyframes example {
@@ -200,7 +200,7 @@ font-size: 1.2em;
           display: grid;
           grid-gap: 1em;
           padding-left: 2em;
-          padding: 2em 3em 2em 2em;
+          padding: 10em 2em 2em 3em;
           grid-template-columns: repeat(2, 10fr);
 	        overflow-y: auto;
 }
@@ -296,15 +296,22 @@ font-size: 2em;
           width: 15em;
           position: fixed;
           fill: #efefef;
-          margin: 3%;
+          margin: 5.2%;
         }
 
-.graphContent, .photoContent {
+.graphContent {
           display: grid;
-          grid-gap: 2em;
-          padding: 5% 3% 5% 5%;
+          grid-gap: 1em;
+          padding: 30% 3% 20% 5%;
           grid-template-columns: repeat(2, 10fr);
         }
+
+.photoContent {
+          display: grid;
+          grid-gap: 1em;
+          padding: 5% 3% 20% 5%;
+          grid-template-columns: repeat(2, 10fr);
+}
 
 .sideNaviMobile {
   position: fixed;
@@ -350,13 +357,13 @@ font-size: 11pt;
 
 
 .buttonPhoto, .buttonGraph {
-  font-size: 0.5em;
+  font-size: 0.6em;
 }
 
 .activeGraph, .activePhoto {
   font-family: "Akzidenz Pro Medium";
   text-align: left;
-  font-size: 0.5em;
+  font-size: 0.6em;
   background: none;
   border: none;
 }
@@ -392,10 +399,10 @@ transition: transform .2s;
         }
 
         .logo {
-          width: 15%;
+          width: 20%;
           position: fixed;
           fill: #efefef;
-          margin: 3%;
+          margin: 5.1em 0em 0em 1.5em;
         }
 
         .naviPhoto, .naviGraph {
@@ -407,7 +414,6 @@ transition: transform .2s;
         .graphContent, .photoContent {
           display: grid;
           grid-gap: 1em;
-         
           grid-template-columns: repeat(2, 20fr);
         }
 
@@ -425,18 +431,18 @@ transition: transform .2s;
           }
 
         .graphContent {
-        	padding-top: 2em;
+        	padding-top: 5em;
         	padding-left: 2em;
         	padding-right: 1em;
-          padding-bottom: 4em;
+          padding-bottom: 8em;
 
         }
 
          .photoContent {
-          padding-top: 2em;
+          padding-top: 5em;
           padding-left: 2em;
           padding-right: 1em;
-          padding-bottom: 4em;
+          padding-bottom: 8em;
 
         }
 
