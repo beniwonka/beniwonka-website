@@ -78,6 +78,13 @@ h3 a {
 	color: #151515;
 }
 
+.gif {
+	height: auto;
+	width: 85%;
+position: fixed;
+	z-index: -1;
+}
+
 .inhalt {
 	animation-name: example;
 	animation-duration: 1s;
