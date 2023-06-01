@@ -28,19 +28,14 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://beniwonka.de/design/captchadesignfestival.html</loc>
+  <loc>https://beniwonka.de/design/analoguearchive.html</loc>
   <lastmod>2020-12-16T21:18:27+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://beniwonka.de/design/hohrecordscover.html</loc>
+  <loc>https://beniwonka.de/design/neounleashedcover.html</loc>
   <lastmod>2020-12-16T21:18:27+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beniwonka.de/design/mockupmagazin.html</loc>
-  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://beniwonka.de/design/heartoverhateposter.html</loc>
@@ -48,17 +43,22 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://beniwonka.de/design/tryerrorposter.html</loc>
+  <loc>https://beniwonka.de/design/captchadesignfestival.html</loc>
   <lastmod>2020-12-16T21:18:27+00:00</lastmod>
-  <priority>1.00</priority>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://beniwonka.de/design/werkschau.html</loc>
+  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://beniwonka.de/design/mockupmagazin.html</loc>
+  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://beniwonka.de/design/augenauftyposuenden.html</loc>
-  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beniwonka.de/design/neounleashedcover.html</loc>
   <lastmod>2020-12-16T21:18:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
@@ -68,39 +68,29 @@
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://beniwonka.de/foto/wienbischur.html</loc>
+  <loc>https://beniwonka.de/design/komma25.html</loc>
   <lastmod>2020-12-16T21:18:27+00:00</lastmod>
-  <priority>1.00</priority>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://beniwonka.de/foto/portraitmia.html</loc>
+  <loc>https://beniwonka.de/foto/hohrecordscover.html</loc>
+  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://beniwonka.de/foto/momo.html</loc>
+  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://beniwonka.de/foto/tryerrorposter.html</loc>
+  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://beniwonka.de/foto/ransom.html</loc>
   <lastmod>2020-12-16T21:18:27+00:00</lastmod>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beniwonka.de/foto/camp19.html</loc>
-  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://beniwonka.de/foto/spiegleinspieglein.html</loc>
-  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://beniwonka.de/foto/portraitflo.html</loc>
-  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://beniwonka.de/foto/festival.html</loc>
-  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://beniwonka.de/foto/duradasa.html</loc>
-  <lastmod>2020-12-16T21:18:27+00:00</lastmod>
-  <priority>0.64</priority>
 </url>
 
 </urlset>
