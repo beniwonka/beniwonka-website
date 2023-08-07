@@ -30,10 +30,7 @@ img {
   user-select: none;
 }
 
-@font-face {
-  font-family: "Akzidenz Pro Regular";
-  src: url("Schriften/TomatoGrotesk-Regular.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
 
 @keyframes example {
   from {opacity: 0;}
@@ -47,7 +44,8 @@ img {
 
 html {
 	cursor: cell;
-	font-family: "Akzidenz Pro Regular";
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
 	background: #151515;
 	  scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */

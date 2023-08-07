@@ -18,10 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 
-@font-face {
-  font-family: "Akzidenz Pro Regular";
-  src: url("Schriften/TomatoGrotesk-Regular.otf");
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
 
 @keyframes example {
   from {opacity: 0;}
@@ -35,7 +32,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 html {
 	cursor: cell;
-	font-family: "Akzidenz Pro Regular";
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
 	background: #efefef;
 	scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
