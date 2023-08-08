@@ -136,6 +136,7 @@ position: fixed;
 }
 
 .headline {
+	text-transform: uppercase;
 	bottom: 0;
 	font-size: 2em;
 	padding: 0 0em 0em 1em;
