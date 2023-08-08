@@ -18,7 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap');
 
 @keyframes example {
   from {opacity: 0;}
@@ -32,8 +32,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 html {
 	cursor: cell;
-	font-family: 'IBM Plex Sans', sans-serif;
-	font-weight: 400;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 300;
 	background: #efefef;
 	scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
