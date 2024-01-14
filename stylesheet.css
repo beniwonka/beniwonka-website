@@ -1,27 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400&display=swap');
 
-@keyframes example {
-  from {opacity: 0.5;}
-  to {opacity: 1;}
+@keyframes zoomIn {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
 }
 
 html {
-  cursor: cell;
-  font-family: 'Titillium Web', sans-serif;
-  width: 100%;
-  height: 100%;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+	cursor: cell;
+	font-family: 'DM Sans', sans-serif;
+	 -webkit-user-select: none;
+	  -khtml-user-select: none;
+	  -moz-user-select: none;
+	  -o-user-select: none;
+	  user-select: none;
+
 }
 
-body {
-  margin:0;
-  padding: 0;
-  border: 0;
-}
+::-webkit-scrollbar { 
+    display: none; 
+    }
 
 img {
     -webkit-user-drag: none;
@@ -31,490 +28,424 @@ img {
   user-drag: none;
 }
 
-
-/* Main */
+body {
+	margin: 0 0 0 0;
+	background-color: black;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	scrollbar-width: none; /* Firefox */
+  	-ms-overflow-style: none; /* IE 10+ */
+}
 
 @media (min-width: 319px) {
 
-.logo {
-  width: 8em;
-  position: fixed;
-  fill: #efefef;
-  padding-left: 2em;
-}
+	a {
+		text-decoration: none;
+		color: white;
+	}
 
-h1 {
-  font-size: 1em;
-}
+	#info {
+			display: flex;
+			flex-direction: row;
+			position: fixed;
+			bottom: 0;
+			color: white;
+			font-size: 3.5vh;
+			padding-left: 7vw;
+		}
 
-h3 {
-	color:grey;
-}
-
-button {
-  cursor:cell;
-}
-
-.sideLink {
-    color: black;
-    text-decoration-line: none;
-}
-
-.sideLinkMobile {
-    color: white;
-    text-decoration-line: none;
-}
+		#info p {
+			margin-left: 5vh;
+			margin-bottom: 3vh;
+		}
 
 
-/* Responsive/Flexible */
-
-.container,
-.column
-{
-  display: -webkit-box; 
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex; 
-  display: flex;
-  -webkit-box-flex: 1 100%;
-  -webkit-flex: 1 100%;
-  -ms-flex: 1 100%;
-  flex: 1 100%; 
-}
-
-/* Anordnung  */
-
-.container {
-  flex-flow: column nowrap;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-  height: 100vh;
-  width: 100%;
-}
-
-  .column {
-    padding: 2% 0%;
-  }
-
-/* Column */  
-
-#graphicContainer {
-  display: flex;
-  justify-content: center;
-  background: #151515;
-  color:#efefef;
-  max-height: 50vh; 
-}
-
-#photographyContainer {
-  display: flex;
-  justify-content: center;
-  background: #efefef;
-  color: #151515;
-  max-height: 50vh; 
-}
+		.logoCon {
+			position: fixed;
+			z-index: -1;
+			top: 40vh;
+			left: 25vw;
+			width: 50%;
+			height: auto;
+		}
 
 
-/* Navigation */
+		.naviCon {
+			z-index: 3;
+			width: 2.5vh;
+			position: fixed;
+			right: 0;
+			margin-right: 5vh;
+			margin-top: 3vh;
+		}
 
-hr {
-  visibility: hidden;
-}
 
-.underPhoto {
-  visibility: hidden;
-  }
+		#galerie {
+			z-index: -2;
+			width: 100vh;
+			height: 100vw;
+			position: fixed;
+			display: flex;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			transform: rotate(270deg);
+			transform-origin: right top;
+			left: -100vh;
+		}
 
-.side { 
-	cursor:cell;
-	font-family: 'Titillium Web', sans-serif;
-  font-size: 1.5em;
-  font-weight: 400;
-    writing-mode: horizontal-tb;
-    text-orientation: unset;
-   }
 
-.sideNavi {
-  visibility: hidden;
-  cursor:cell;
-  padding-top: 1em;
-  position: fixed;
-  right: 1.2em;
-}
+		#picConTop {
+			height: 50vh;
+			width: 100vw;
+			padding-left: 6vh;
+			padding-top: 15vw;
+		}
 
-.sideNaviMobile {
-  visibility: visible;
-  cursor:cell;
-  position: fixed;
-  top: 2.3em;
-  right:1.3em;
-}
 
-.naviHead {
-margin-bottom: 0px;
-padding-left: 0.4em;
-display: inline-block;
-border: none;
-font-size: 1.2em;
-}
+		#picConTop img {
+			transform: rotate(90deg);
+			}
 
-.buttonGraph {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
-  text-align: left;
-  font-size: 0.8em;
-  color: #efefef;
-  background: none;
-  border: none;
-}
 
-.buttonPhoto {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
-  text-align: left;
-  font-size: 0.8em;
-  color: #151515;
-  background: none;
-  border: none;
-}
+		#picConBot {
+			height: 50vh;
+			width: 100vw;
+			padding-right: 6vh;	
+		}
 
-.activeGraph, .activePhoto {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 400;
-  text-align: left;
-  font-size: 0.8em;
-  background: none;
-  border: none;
-}
+		#picConBot img {
+			transform: rotate(90deg);
+			}
 
-.naviPhoto {
+
+		.picThumb {
+			height: 45vh;
+			width: auto;
+			transition: 0.65s;
+			padding: 1vh 1vh 1vh 0;
+		}
+
+		.picThumb:hover {
+			animation: 1s ease-in 2s;
+			scale: 110%;
+		}
+
+		.abstandThumb {
+			margin-top: 20vh;
+		}
+
+		#page1, #page2, #page3, #page4, #page5, #page6, #page7 {
+			transform: translate(100vh, 100vw);
+			transition: 1s;
+			z-index: 99999;
+		}
+
+
+		.popOutProject {
+			display: flex;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			position: fixed;
+			z-index: 99999;
+			margin-left: 8.5vw;
+			margin-top: 9.5vh;
+			width: 85vw;
+			height: 80vh;
+			background-color: white;
+			border-radius: 35px;
+		}
+
+		#close {
+			position: inherit;
+			z-index: 99999;
+			right: 13%;
+			transform: scaleY(0.65);
+			font-size: 2.5em;
+		}
+
+		#closeAbout {
+			position: fixed;
+			z-index: 99999;
+			right: 15.5%;
+			transform: scaleY(0.65);
+			font-size: 2.5em;
+		}
+
+		#titel {
+			display: block;
+			overflow-wrap: break-word;
+			line-height: 1em;
+			font-weight: 400;
+			letter-spacing: -0.03em;
+			font-kerning: normal;
+			font-size: 5.5vh;
+			margin-bottom: 0;
+		}
+
+		#unterTitel {
+			display: inline-block;
+			margin-top: 0;
+		}
+
+		.beschreibungCon {
+			position: absolute;
+			margin-left: 4vw;
+			width: 65vw;
+		}
+
+		#beschreibung {
+			font-size: 2vh;
+			font-weight: 200;
+		}
+
+		.foSlide {
+			position: absolute;
+			width: 80vw;
+			display: block;
+    		padding-top: 130vw;
+    		text-align: center;
+    		padding-left: 2.5vw;
+
+		}
+
+		#photoThumb {
+			width: 37.5vw;
+			height: auto;
+			padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+		}
+
+		.kategorie {
+			margin-top: 5vh;
+			z-index: 99998;
+			display: flex;
+			flex-direction: row;
+			width: 80vw;
+		}
+
+		#buttonSel {
+			font-weight: 400;
+			font-size: 0.5em;
+			margin-right: 1em;
+			padding: 0.5em;
+			border: 0.25vh solid black;
+			text-align: center;
+			border-radius: 25px;
+			color: black;
+			width: 25vw;
+			height: 2vh;
+		}
+
+		#buttonNo {
+			font-weight: 200;
+			font-size: 0.5em;
+			margin-right: 1em;
+			opacity: 30%;
+			padding: 0.5em;
+			border: 0.25vh solid black;
+			text-align: center;
+			border-radius: 25px;
+			color: black;
+			width: 25vw;
+			height: 2vh;
+		}
+
+		.lightbox {
+	display: none;
 	position: fixed;
-	bottom: 1%;
-	padding-bottom: 0em;
+	z-index: 99999;
+	width: 90vw;
+	height: 80vh;
+	text-align: center;
+	background: rgba(0,0,0,0.6);
 }
 
-.naviGraph {
-	position: fixed;
-	bottom: 51%;
-	padding-bottom: 0em;
+.lightbox img {
+	  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+	max-width: 75vw;
+	max-height: 90vh;
 }
 
-/* Gallery */ 
-
-.column {
-    padding: 0% 0% 0% 2%;
+.lightbox:target {
+	outline: none;
+	display: block;
 }
 
-.graphContent, .photoContent {
-          display: grid;
-          grid-gap: 1em;
-          padding-left: 2em;
-          padding: 10em 2em 2em 3em;
-          grid-template-columns: repeat(2, 10fr);
-	        overflow-y: auto;
-}
+		#pageAbout {
+			visibility: hidden;
+			position: fixed;
+			margin-left: 12vw;
+			margin-top: 12vh;
+			width: 80vw;
+			background-color: white;
+			height: 50vh;
+			display: flex;
+			flex-direction: column;
+			border-radius: 50px;
+			overflow-x: hidden;
+			overflow-y: scroll;
 
-.graphGalleryPic, .photoGalleryPic {
-        width: 100%;
-        }
+		}
 
-.photoContent, .graphContent {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
+		#pageAbout h3 {
+			font-size: 5vw;
+			font-weight: 200;
+			padding-top: 3vw;
+			padding-left: 5vw;
+		}
 
-::-webkit-scrollbar { 
-    display: none; 
-    }
-
-        .AP {
-          grid-column-start: 1;
-          grid-row-start: 1;
-        }
-
-        .A {
-          grid-column-start: 2;
-          grid-row-start: 1;
-        }
-
-        .B {
-          grid-column-start: 2;
-          grid-row-start: 2;
-        }
-
-        .C {
-          grid-column-start: 1;
-          grid-row-start: 2;
-        }
-
-        .D {
-          grid-column-start: 2;
-          grid-row-start: 3;
-        }
-
-        .E {
-          grid-column-start: 1;
-          grid-row-start: 3;
-        }
-
-        .F {
-          grid-column-start: 1;
-          grid-row-start: 4;
-        }
-
-        .G {
-          grid-column-start: 2;
-          grid-row-start: 4;
-        }
-
-        .H {
-          grid-column-start: 2;
-          grid-row-start: 5;
-        }
-
-
-        .I {
-          grid-column-start: 1;
-          grid-row-start: 5;
-        }
+		#pageAbout img {
+			position: fixed;
+			opacity: 40%;
+			padding-top: 25%;
+			left: 63%;
+			width: 25vw;
+			height: auto;
+		}
 
 
 }
 
-@media (min-width: 540px) {
 
-.graphGalleryPic, .photoGalleryPic {
-        width: 90%;
-        }
-
-  .naviHead {
-font-size: 2em;
-}
-
-.naviPhoto {
-	bottom: 1%;
-	padding-bottom: 0em;
-}
-
-.naviGraph {
-	bottom: 51%;
-	padding-bottom: 0em;
-}
-
-.logo {
-          width: 15em;
-          position: fixed;
-          fill: #efefef;
-          margin: 5.2%;
-        }
-
-.graphContent {
-          display: grid;
-          grid-gap: 1em;
-          padding: 30% 3% 20% 5%;
-          grid-template-columns: repeat(2, 10fr);
-        }
-
-.photoContent {
-          display: grid;
-          grid-gap: 1em;
-          padding: 5% 3% 20% 5%;
-          grid-template-columns: repeat(2, 10fr);
-}
-
-.sideNaviMobile {
-  position: fixed;
-  font-size: 2em;
-}
-
-.buttonGraph {
-  font-family: 'Titillium Web', sans-serif;;
-  font-weight: 300;
-  text-align: left;
-  font-size: 1.5em;
-  color: #efefef;
-  background: none;
-  border: none;
-}
-
-.buttonPhoto {
-  font-family: 'Titillium Web', sans-serif;;
-  font-weight: 300;
-  text-align: left;
-  font-size: 1.5em;
-  color: #151515;
-  background: none;
-  border: none;
-}
-
-.activeGraph, .activePhoto {
-  font-family: 'Titillium Web', sans-serif;;
-  font-weight: 400;
-  text-align: left;
-  font-size: 1.5em;
-  background: none;
-  border: none;
-}
-
-}
-
-/* Breakpoint für Desktop */
 
 @media (min-width: 992px) {
 
+		#closeAbout {
+			position: fixed;
+			z-index: 99999;
+			right: 27.5%;
+			transform: scaleY(0.65);
+			font-size: 2.5em;
+		}
 
-    .naviHead {
-font-size: 11pt;
+		#pageAbout {
+			position: fixed;
+			margin-left: 37vw;
+			margin-top: 12vh;
+			width: 40vw;
+			background-color: white;
+			height: 50vh;
+			display: flex;
+			flex-direction: column;
+			border-radius: 50px;
+			overflow-x: hidden;
+			overflow-y: scroll;
+
+		}
+
+		#pageAbout h3 {
+			font-size: 1.5vw;
+			font-weight: 200;
+			padding-top: 1vw;
+			padding-left: 5vw;
+		}
+
+		#pageAbout img {
+			position: fixed;
+			opacity: 40%;
+			padding-top: 8%;
+			left: 60%;
+			width: 12.5vw;
+			height: auto;
+		}
+
+
+		#info {
+			display: flex;
+			flex-direction: row;
+			position: fixed;
+			bottom: 0;
+			color: white;
+			font-size: 2vh;
+			padding-left: 0vw;
+		}
+
+
+
+		.logoCon {
+			position: fixed;
+			z-index: -1;
+			top: 40vh;
+			left: 38vw;
+			width: 25%;
+			height: auto;
+		}
+
+
+		.popOutProject {
+			display: flex;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			position: fixed;
+			z-index: 99999;
+			margin-left: 12.5vw;
+			margin-top: 12.5vh;
+			width: 75vw;
+			height: 65vh;
+			background-color: white;
+			border-radius: 35px;
+		}
+
+		#close {
+			right: 16.5%;
+		}
+
+		#titel {
+		overflow-wrap: unset;
+		}
+
+		.beschreibungCon {
+			position: fixed;
+			margin-left: 4vw;
+			width: 35vw;
+		}
+
+		.foSlide {
+			width: 65vw;
+			display: flex;
+    		flex-wrap: wrap;
+    		align-items: flex-end;
+    		flex-direction: column;
+    		padding-top: 2.5vw;
+    		padding-left: 0vw;
+		}
+
+		#photoThumb {
+			width: 20vw;
+			padding: 1vh 1vh 1vh 1vh;
+		}
+
+		.kategorie {
+			width: 35vw;
+		}
+
+		#buttonSel {
+			width: 5vw;
+			height: 2vh;
+				font-size: 0.9vw;
+		}
+
+		#buttonNo {
+			width: 5vw;
+			height: 2vh;
+				font-size: 0.9vw;
+		}
+
+		.lightbox {
+	width: 75vw;
+	height: 65vh;
+}
+
+.lightbox img {
+  left: 50%;
+	max-width: 50vw;
+	max-height: 50vh;
 }
 
 
-.buttonPhoto, .buttonGraph {
-  font-size: 0.6em;
-}
-
-.activeGraph, .activePhoto {
-  font-family: 'Titillium Web', sans-serif;;
-  font-weight: 400;
-  text-align: left;
-  font-size: 0.6em;
-  background: none;
-  border: none;
-}
-
-  .side {
-    writing-mode: vertical-lr;
-text-orientation: sideways;
-transition: transform .2s;
-  }
-
- .side:hover {
-  transform: scale(1.1);
- }
-  .sideNaviMobile {
-  visibility: hidden;
-}
-
-      .sideNavi {
-        visibility: visible;
-        display: block;
-        position: absolute;
-        top: 40%;
-        right: 2%;
-        background-color: none;
-      }
-
-        .container {
-          flex-flow: row nowrap;
-       }
-
-        .column {
-          padding: 0% 3% 0% 2%;
-        }
-
-        .logo {
-          width: 20%;
-          position: fixed;
-          fill: #efefef;
-          margin: 5.1em 0em 0em 1.5em;
-        }
-
-        .naviPhoto, .naviGraph {
-        bottom: 0px;
-        padding-bottom: 4em;
-        transform: scale(1.3);
-        }
-
-        .graphContent, .photoContent {
-          display: grid;
-          grid-gap: 1em;
-          grid-template-columns: repeat(2, 20fr);
-        }
-
-        #photographyContainer, #graphicContainer {
-        	max-height: 100vh;
-        }
-
-        .graphGalleryPic, .photoGalleryPic {
-        	width: 100%;
-          transition: transform .2s;
-         }
-
-         .graphGalleryPic:hover, .photoGalleryPic:hover {
-          transform: scale(1.04);
-          }
-
-        .graphContent {
-        	padding-top: 5em;
-        	padding-left: 2em;
-        	padding-right: 1em;
-          padding-bottom: 8em;
-
-        }
-
-         .photoContent {
-          padding-top: 5em;
-          padding-left: 2em;
-          padding-right: 1em;
-          padding-bottom: 8em;
-
-        }
-
-        /* Grid-Anreihung */
-
-
-.all:hover ~ hr {
-  visibility: visible;
-  margin-left: 2%;
-}
-
-.allph:hover ~ hr {
-  visibility: visible;
-  margin-left: 2%;
-}
-
-.buch:hover ~ hr {
-  visibility: visible;
-  margin-left: 29%;
-}
-
-.graph:hover ~ hr {
-  visibility: visible;
-  margin-left: 44%;
-}
-
-.post:hover ~ hr {
-  visibility: visible;
-  margin-left: 61%;
-}
-
-.web:hover ~ hr {
-  visibility: visible;
-  margin-left: 84.5%;
-}
-
-.cede:hover ~ hr {
-  visibility: visible;
-  margin-left: 87.5%;
 }
 
 
-hr {
-  height: .05rem;
-  width: 10%;
-  margin: 0;
-  background: white;
-  border: none;
-  transition: .3s ease-in-out;
 }
-
-.underPhoto {
-  height: .05rem;
-  width: 10%;
-  margin: 0;
-  background: black;
-  border: none;
-  transition: .3s ease-in-out;
-}
-
-}
-
