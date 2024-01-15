@@ -216,6 +216,12 @@ body {
 				.beschreibungCon {
 					margin-left: 4vw;
 					width: 65vw;
+					 z-index: 99999;
+				}
+
+				.beschreibungCon a {
+					color: black;
+					text-decoration: underline;
 				}
 
 
@@ -395,7 +401,7 @@ body {
 			position: fixed;
 			z-index: 99999;
 			right: 39%;
-			margin-left: 10vw;
+			margin-left: 5vw;
 			transform: scaleY(0.65);
 			font-size: 2.5em;
 		}
@@ -448,13 +454,14 @@ body {
   }
 
   #close {
-    right: 40%;
+    right: 16.5%;
   }
 
   .beschreibungCon {
     position: fixed;
     margin-left: 4vw;
     width: 35vw;
+    z-index: 99999;
   }
 
   .foSlide {
