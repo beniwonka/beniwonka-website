@@ -46,7 +46,7 @@ body {
 			    display: flex;
 			    flex-direction: row;
 			    position: fixed;
-			    bottom: 0;
+			    bottom: 5vw;
 			    color: white;
 			    font-size: 3.5vh;
 			    padding-left: 7vw;
@@ -134,6 +134,20 @@ body {
 
 				.abstandThumb {
 					margin-top: 20vh;
+				}
+
+				.footer {
+					position: fixed;
+					bottom: 0;
+					width: 100vw;
+					margin-bottom: 1vw;
+				}
+
+				.footer p {
+					height: 2vh;
+					font-size: 0.6em;
+					text-align: center;
+					color: white;
 				}
 
 
@@ -340,7 +354,17 @@ body {
   #info {
     font-size: 3vh;
     padding-left: 2vw;
+    bottom: 0;
   }
+
+	.footer {
+		bottom: 0;
+		width: 95vw;
+	}
+
+	.footer p {
+			font-size: 0.8em;
+				}
 
   #picConTop {
     padding-left: 6vh;
