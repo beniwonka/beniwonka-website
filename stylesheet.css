@@ -190,9 +190,10 @@ body {
 				#closeAbout {
 					position: fixed;
 					z-index: 99999;
-					right: 15.5%;
+					right: 16.5%;
 					transform: scaleY(0.65);
 					font-size: 2.5em;
+					top: 9.5%;
 				}
 
 
@@ -409,6 +410,7 @@ body {
 			margin-left: 5vw;
 			transform: scaleY(0.65);
 			font-size: 2.5em;
+			top:0;
 		}
 }
 
