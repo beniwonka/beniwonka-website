@@ -364,6 +364,10 @@ body {
     bottom: 0;
   }
 
+  .C {
+  	padding-top: 0;
+  }
+  
 	.footer {
 		bottom: 0;
 		width: 95vw;
