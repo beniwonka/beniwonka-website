@@ -412,12 +412,8 @@ body {
 			font-size: 2.5em;
 			top: 24%;
 		}
-}
 
-/* Breakpoint Desktop */
-
-@media (min-width: 992px) {
-  #closeAbout {
+		#closeAbout {
     position: fixed;
     z-index: 99999;
     right: 27.5%;
@@ -524,3 +520,8 @@ body {
 			font-size: 2.5em;
 		}
 }
+
+}
+
+
+
