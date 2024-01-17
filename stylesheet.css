@@ -44,6 +44,7 @@ body {
 
 			  #info {
 			    display: flex;
+			    z-index: 99999;
 			    flex-direction: row;
 			    position: fixed;
 			    bottom: 5vw;
