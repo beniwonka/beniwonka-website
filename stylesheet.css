@@ -333,7 +333,7 @@ body {
 					font-size: 5vw;
 					font-weight: 200;
 					padding-top: 3vw;
-					padding-left: 5vw;
+					padding-left: 10vw;
 				}
 
 				#pageAbout img {
@@ -394,9 +394,13 @@ body {
     #pageAbout h3 {
     font-size: 1.5vw;
     font-weight: 200;
-    padding-top: 4vw;
+    padding-top: 0;
+    margin-top: 0;
     padding-left: 3.5vw;
   }
+
+
+
 
   #closeAbout {
 			position: fixed;
