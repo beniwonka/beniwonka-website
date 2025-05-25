@@ -9,6 +9,10 @@
   }
 }
 
+:root {
+  --accent-color: #FFED00;
+}
+
 html {
   cursor: cell;
   font-family: 'DM Sans', sans-serif;
@@ -33,10 +37,63 @@ body {
 }
 
 @media (min-width: 319px) {
+
+	    .flex-container {
+    font-size: 2vw;
+    width: 92.5%;
+    height: 40vh;
+    padding-left: 4vw;
+    padding-top: 4em;
+    display: flex;
+    gap: 1rem;
+    color: white;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex: 1;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item a {
+  	font-size: 3vw;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  .empty {
+  	height: 2.5vw;
+  }
+
+	  #naviGator {
+	  	height: 5vh;
+  	display: flex;
+		z-index: 99999;
+		flex-direction: row;
+	  position: fixed;
+		color: var(--accent-color);
+		top: -0.5vh;
+		right: 25%;
+    font-size: 2.5vh;
+    bottom: 0;
+    text-align: center;
+  }
+
+  #naviGator p {
+  	height: 5vh;
+  	padding-left: 10vw;
+  }
 		  
 		  	a {
 			    text-decoration: none;
-			    color: white;
+			    color: var(--accent-color);
 			  }
 
 
@@ -48,10 +105,16 @@ body {
 			    flex-direction: row;
 			    position: fixed;
 			    bottom: 5vw;
-			    color: white;
+			    color: var(--accent-color);
 			    font-size: 2vh;
 			    padding-left: 7vw;
 			  }
+
+			    #BW_about {
+  	padding-left: 4vw;
+  	padding-top: 15vh;
+  	z-index: -1;
+  }
 
 
 			  #info p {
@@ -62,10 +125,10 @@ body {
 
 				.logoCon {
 					position: fixed;
-					z-index: -1;
-					top: 40vh;
-					left: 25vw;
-					width: 50%;
+					z-index: 1;
+					top: 12.5vh;
+					left: 15vw;
+					width: 55%;
 					height: auto;
 				}
 
@@ -148,7 +211,7 @@ body {
 					height: 2vh;
 					font-size: 0.6em;
 					text-align: center;
-					color: white;
+					color: var(--accent-color);
 				}
 
 
@@ -159,22 +222,6 @@ body {
 					transform: translate(100vh, 100vw);
 					transition: 1s;
 					z-index: 99999;
-				}
-
-
-				.popOutProject {
-					display: flex;
-					flex-direction: column;
-					overflow-x: hidden;
-					overflow-y: scroll;
-					position: fixed;
-					z-index: 99999;
-					margin-left: 8.5vw;
-					margin-top: 9.5vh;
-					width: 85vw;
-					height: 80vh;
-					background-color: white;
-					border-radius: 35px;
 				}
 
 
@@ -199,12 +246,13 @@ body {
 
 				#titel {
 					display: block;
+					color: white;
 					overflow-wrap: break-word;
 					line-height: 1em;
 					font-weight: 400;
-					letter-spacing: -0.03em;
+					letter-spacing: 0,2em;
 					font-kerning: normal;
-					font-size: 5.5vh;
+					font-size: 9vw;
 					margin-bottom: 0;
 				}
 
@@ -248,47 +296,6 @@ body {
 				    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
 				  }
 
-
-				.kategorie {
-					margin-top: 5vh;
-					z-index: 99998;
-					display: flex;
-					flex-direction: row;
-					width: 100vw;
-					flex-wrap: wrap;
-				}
-
-
-				#buttonSel {
-					width: 20vw;
-					height: 2vh;
-					font-weight: 400;
-					font-size: 0.5em;
-					margin-right: 1em;
-					margin-top: 0.5em;
-					padding: 0.5em;
-					border: 0.25vh solid black;
-					text-align: center;
-					border-radius: 25px;
-					color: black;
-				}
-
-
-				#buttonNo {
-					font-weight: 200;
-					font-size: 0.5em;
-					margin-right: 1em;
-					margin-top: 0.5em;
-					opacity: 30%;
-					padding: 0.5em;
-					border: 0.25vh solid black;
-					text-align: center;
-					border-radius: 25px;
-					color: black;
-					width: 20vw;
-					height: 2vh;
-				}
-
 /* Projekt Lightbox */
 
 				 .lightbox {
@@ -315,54 +322,91 @@ body {
 		    display: block;
 		  	}
 
-		  	#pageAbout {
-			    visibility: hidden;
-			    position: fixed;
-			    margin-left: 12vw;
-			    margin-top: 12vh;
-			    width: 80vw;
-			    background-color: white;
-			    height: 50vh;
-			    display: flex;
-			    flex-direction: column;
-			    border-radius: 50px;
-			    overflow-x: hidden;
-			    overflow-y: scroll;
-		  	}
-
-				#pageAbout h3 {
-					font-size: 5vw;
-					font-weight: 200;
-					padding-top: 3vw;
-					padding-left: 10vw;
-				}
-
-				#pageAbout img {
-					position: fixed;
-					opacity: 40%;
-					padding-top: 25%;
-					left: 63%;
-					width: 25vw;
-					height: auto;
-				}
-
-
 }
 
 
 /* Breakpoint bspw. Tablet */
 
 @media (min-width: 540px) {
+
+					#titel {
+					display: block;
+					color: white;
+					overflow-wrap: break-word;
+					line-height: 1em;
+					font-weight: 400;
+					letter-spacing: 0,2em;
+					font-kerning: normal;
+					font-size: 3.75vw;
+					margin-bottom: 0;
+				}
+ 
   .logoCon {
-    top: 40vh;
-    left: 38vw;
-    width: 25%;
+    top: 25vh;
+    left: 10.5vw;
+    width: 18%;
   }
 
   #info {
     font-size: 2vh;
     padding-left: 2vw;
     bottom: 0;
+  }
+
+  #naviGator {
+  	display: flex;
+		z-index: 99999;
+		flex-direction: column;
+	  position: fixed;
+		color: var(--accent-color);
+		top: 11.5vh;
+		right: 10vw;
+    font-size: 4vh;
+    bottom: 0;
+  }
+
+  #BW_about {
+  	padding-left: 4vw;
+  	padding-top: 23.5vh;
+  	z-index: -1;
+  }
+
+    .flex-container {
+    font-size: 1vw;
+    width: 80%;
+    height: 40vh;
+    padding-left: 4vw;
+    padding-top: 4em;
+    display: flex;
+    gap: 2rem;
+    color: white;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item a {
+  	font-size: 1.15vw;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  .empty {
+  	height: 2.5vw;
+  }
+
+  .subtitle {
+  	font-size: 0.75vw;
   }
   
 	.footer {
@@ -371,7 +415,7 @@ body {
 	}
 
 	.footer p {
-			font-size: 0.8em;
+			font-size: 0.6em;
 				}
 
   #picConTop {
@@ -383,81 +427,14 @@ body {
     height: 45vh;
   }
 
-  .kategorie {
-    flex-wrap: nowrap;
-  }
-
   .foSlide,
   .beschreibungCon {
     position: absolute;
   }
 
-    #pageAbout h3 {
-    font-size: 1.5vw;
-    font-weight: 200;
-    padding-top: 0;
-    margin-top: 0;
-    padding-left: 3.5vw;
-  }
-
-
-
-
-  #closeAbout {
-			position: fixed;
-			z-index: 99999;
-			right: 39%;
-			margin-left: 5vw;
-			transform: scaleY(0.65);
-			font-size: 2.5em;
-			top: 24%;
-		}
-
-		#closeAbout {
-    position: fixed;
-    z-index: 99999;
-    right: 27.5%;
-    transform: scaleY(0.65);
-    font-size: 2.5em;
-  }
-
-  #pageAbout {
-    position: fixed;
-	  margin-left: 25vw;
-	  margin-top: 25vh;
-    width: 40vw;
-    background-color: white;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-radius: 50px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-
   #info {
     font-size: 2.5vh;
     padding-left: 1.5vw;
-  }
-
-
-  .popOutProject {
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    position: fixed;
-    z-index: 99999;
-    margin-left: 12.5vw;
-    margin-top: 12.5vh;
-    width: 75vw;
-    height: 65vh;
-    background-color: white;
-    border-radius: 35px;
-  }
-
-  #close {
-    right: 16.5%;
   }
 
   .beschreibungCon {
@@ -482,17 +459,6 @@ body {
     padding: 1vh 1vh 1vh 1vh;
   }
 
-  .kategorie {
-    width: 35vw;
-  }
-
-  #buttonSel,
-  #buttonNo {
-    width: 5vw;
-    height: 2vh;
-    font-size: 0.9vw;
-  }
-
   .lightbox {
     width: 75vw;
     height: 65vh;
@@ -504,21 +470,7 @@ body {
     max-height: 50vh;
   }
 
-      #pageAbout h3 {
-    font-size: 1.5vw;
-    font-weight: 200;
-    padding-top: 4vw;
-    padding-left: 3.5vw;
-  }
 
-  #closeAbout {
-			position: fixed;
-			z-index: 99999;
-			right: 39%;
-			margin-left: 10vw;
-			transform: scaleY(0.65);
-			font-size: 2.5em;
-		}
 }
 
 }

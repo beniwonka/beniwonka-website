@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400&display=swap');
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+:root {
+  --accent-color: #FFED00;
+}
+
+html {
+  cursor: cell;
+  font-family: 'DM Sans', sans-serif;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  user-drag: none;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+@media (min-width: 319px) {
+
+		  #naviGator {
+		  	height: 5vh;
+  	display: flex;
+		z-index: 99999;
+		flex-direction: row;
+	  position: fixed;
+		color: var(--accent-color);
+		top: -0.5vh;
+		right: 25%;
+    font-size: 2.5vh;
+    bottom: 0;
+    text-align: center;
+  }
+
+    #naviGator p {
+    	height: 5vh;
+  	padding-left: 10vw;
+  }
+		  
+		  	a {
+			    text-decoration: none;
+			    color: var(--accent-color);
+			  }
+
+
+/* Aufbau Grundlagen */
+
+			  #info {
+			    display: flex;
+			    z-index: 99999;
+			    flex-direction: row;
+			    position: fixed;
+			    bottom: 5vw;
+			    color: var(--accent-color);
+			    font-size: 2vh;
+			    padding-left: 7vw;
+			  }
+
+
+			  #info p {
+			    margin-left: 4.25vh;
+			    margin-bottom: 3vh;
+			  }
+
+
+				.logoCon {
+					position: fixed;
+					z-index: 1;
+					top: 12.5vh;
+					left: 15vw;
+					width: 55%;
+					height: auto;
+				}
+
+
+				.naviCon {
+					z-index: 3;
+					width: 2.5vh;
+					position: fixed;
+					right: 0;
+					margin-right: 5vh;
+					margin-top: 3vh;
+				}
+
+
+				#galerie {
+					z-index: -2;
+					width: 100vh;
+					height: 100vw;
+					position: fixed;
+					display: flex;
+					overflow-x: hidden;
+					overflow-y: scroll;
+					transform: rotate(270deg);
+					transform-origin: right top;
+					left: -100vh;
+				}
+
+
+				#picConTop {
+					height: 50vh;
+					padding-top: 5vw;
+				}
+
+
+				#picConTop img {
+					transform: rotate(90deg);
+					}
+
+
+				#picConBot {
+					margin-left: 25%;
+				}
+
+
+				#picConBot img {
+					transform: rotate(90deg);
+					}
+
+
+				.picThumb {
+					height: 55vh;
+					width: auto;
+					transition: 0.65s;
+					padding: 1vh 1vh 1vh 0;
+				}
+
+
+				.picThumb:hover {
+					animation: 1s ease-in 2s;
+					scale: 110%;
+				}
+
+				.footer {
+					position: fixed;
+					bottom: 0;
+					width: 100vw;
+					margin-bottom: 1vw;
+				}
+
+				.footer p {
+					height: 2vh;
+					font-size: 0.4em;
+					text-align: center;
+					color: var(--accent-color);
+				}
+
+
+/* Projekt Container */
+
+
+				#page1, #page2, #page3, #page4, #page5, #page6, #page7 {
+					transform: translate(100vh, 100vw);
+					transition: 1s;
+					z-index: 99999;
+				}
+
+
+				.popOutProject {
+					display: flex;
+					flex-direction: column;
+					overflow-x: hidden;
+					overflow-y: scroll;
+					position: fixed;
+					z-index: 99999;
+					margin-left: 8.5vw;
+					margin-top: 9.5vh;
+					width: 85vw;
+					height: 80vh;
+					background-color: white;
+					border-radius: 35px;
+				}
+
+
+				#close {
+					position: inherit;
+					z-index: 99999;
+					right: 13%;
+					transform: scaleY(0.65);
+					font-size: 2.5em;
+				}
+
+
+				#closeAbout {
+					position: fixed;
+					z-index: 99999;
+					right: 16.5%;
+					transform: scaleY(0.65);
+					font-size: 2.5em;
+					top: 9.5%;
+				}
+
+
+				#titel {
+					display: block;
+					overflow-wrap: break-word;
+					line-height: 1em;
+					font-weight: 400;
+					letter-spacing: -0.03em;
+					font-kerning: normal;
+					font-size: 5.5vh;
+					margin-bottom: 0;
+				}
+
+
+				#unterTitel {
+					display: inline-block;
+					margin-top: 0;
+				}
+
+
+				.beschreibungCon {
+					margin-left: 4vw;
+					width: 65vw;
+					 z-index: 99999;
+				}
+
+				.beschreibungCon a {
+					color: black;
+					text-decoration: underline;
+				}
+
+
+				#beschreibung {
+					font-size: 2vh;
+					font-weight: 200;
+				}
+
+
+				.foSlide {
+					width: 80vw;
+		    	padding-top: 10vw;
+		    	text-align: center;
+		    	padding-left: 2.5vw;
+		    	padding-bottom: 5vw;
+
+				}
+
+				 #photoThumb {
+				    width: 37.5vw;
+				    height: auto;
+				    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+				  }
+
+
+				.kategorie {
+					margin-top: 5vh;
+					z-index: 99998;
+					display: flex;
+					flex-direction: row;
+					width: 100vw;
+					flex-wrap: wrap;
+				}
+
+
+				#buttonSel {
+					width: 20vw;
+					height: 2vh;
+					font-weight: 400;
+					font-size: 0.5em;
+					margin-right: 1em;
+					margin-top: 0.5em;
+					padding: 0.5em;
+					border: 0.25vh solid black;
+					text-align: center;
+					border-radius: 25px;
+					color: black;
+				}
+
+
+				#buttonNo {
+					font-weight: 200;
+					font-size: 0.5em;
+					margin-right: 1em;
+					margin-top: 0.5em;
+					opacity: 30%;
+					padding: 0.5em;
+					border: 0.25vh solid black;
+					text-align: center;
+					border-radius: 25px;
+					color: black;
+					width: 20vw;
+					height: 2vh;
+				}
+
+/* Projekt Lightbox */
+
+				 .lightbox {
+		    display: none;
+		    position: fixed;
+		    z-index: 99999;
+		    width: 90vw;
+		    height: 80vh;
+		    text-align: center;
+		    background: rgba(0, 0, 0, 0.6);
+		  	}
+
+		 		 .lightbox img {
+		    position: absolute;
+		    top: 50%;
+		    left: 45%;
+		    transform: translate(-50%, -50%);
+		    max-width: 75vw;
+		    max-height: 90vh;
+		  	}
+
+		  		.lightbox:target {
+		    outline: none;
+		    display: block;
+		  	}
+
+		  	#pageAbout {
+			    visibility: hidden;
+			    position: fixed;
+			    margin-left: 12vw;
+			    margin-top: 12vh;
+			    width: 80vw;
+			    background-color: white;
+			    height: 50vh;
+			    display: flex;
+			    flex-direction: column;
+			    border-radius: 50px;
+			    overflow-x: hidden;
+			    overflow-y: scroll;
+		  	}
+
+				#pageAbout h3 {
+					font-size: 5vw;
+					font-weight: 200;
+					padding-top: 3vw;
+					padding-left: 10vw;
+				}
+
+				#pageAbout img {
+					position: fixed;
+					opacity: 40%;
+					padding-top: 25%;
+					left: 63%;
+					width: 25vw;
+					height: auto;
+				}
+
+
+}
+
+
+/* Breakpoint bspw. Tablet */
+
+@media (min-width: 540px) {
+  .logoCon {
+    top: 25vh;
+    left: 10.5vw;
+    width: 18%;
+  }
+
+  #info {
+    font-size: 2vh;
+    padding-left: 2vw;
+    bottom: 0;
+  }
+
+  #naviGator {
+  	display: flex;
+		z-index: 99999;
+		flex-direction: column;
+	  position: fixed;
+		color: var(--accent-color);
+		top: 11.5vh;
+		right: 10vw;
+    font-size: 4vh;
+    bottom: 0;
+  }
+  
+	.footer {
+		bottom: 0;
+		width: 95vw;
+	}
+
+	.footer p {
+			font-size: 0.6em;
+	}
+
+  #picConTop {
+    padding-top: 15vw;
+  }
+
+  .picThumb {
+    height: 55vh;
+  }
+
+  .kategorie {
+    flex-wrap: nowrap;
+  }
+
+  .foSlide,
+  .beschreibungCon {
+    position: absolute;
+  }
+
+    #pageAbout h3 {
+    font-size: 1.5vw;
+    font-weight: 200;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 3.5vw;
+  }
+
+
+
+
+  #closeAbout {
+			position: fixed;
+			z-index: 99999;
+			right: 39%;
+			margin-left: 5vw;
+			transform: scaleY(0.65);
+			font-size: 2.5em;
+			top: 24%;
+		}
+
+		#closeAbout {
+    position: fixed;
+    z-index: 99999;
+    right: 27.5%;
+    transform: scaleY(0.65);
+    font-size: 2.5em;
+  }
+
+  #pageAbout {
+    position: fixed;
+	  margin-left: 25vw;
+	  margin-top: 25vh;
+    width: 40vw;
+    background-color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 50px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  #info {
+    font-size: 2.5vh;
+    padding-left: 1.5vw;
+  }
+
+
+  .popOutProject {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    z-index: 99999;
+    margin-left: 12.5vw;
+    margin-top: 12.5vh;
+    width: 75vw;
+    height: 65vh;
+    background-color: white;
+    border-radius: 35px;
+  }
+
+  #close {
+    right: 16.5%;
+  }
+
+  .beschreibungCon {
+    position: fixed;
+    margin-left: 4vw;
+    width: 35vw;
+    z-index: 99999;
+  }
+
+  .foSlide {
+    width: 65vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-top: 2.5vw;
+    padding-left: 0vw;
+  }
+
+  #photoThumb {
+    width: 20vw;
+    padding: 1vh 1vh 1vh 1vh;
+  }
+
+  .kategorie {
+    width: 35vw;
+  }
+
+  #buttonSel,
+  #buttonNo {
+    width: 5vw;
+    height: 2vh;
+    font-size: 0.9vw;
+  }
+
+  .lightbox {
+    width: 75vw;
+    height: 65vh;
+  }
+
+  .lightbox img {
+    left: 50%;
+    max-width: 50vw;
+    max-height: 50vh;
+  }
+
+      #pageAbout h3 {
+    font-size: 1.5vw;
+    font-weight: 200;
+    padding-top: 4vw;
+    padding-left: 3.5vw;
+  }
+
+  #closeAbout {
+			position: fixed;
+			z-index: 99999;
+			right: 39%;
+			margin-left: 10vw;
+			transform: scaleY(0.65);
+			font-size: 2.5em;
+		}
+}
+
+}
+
+
+
