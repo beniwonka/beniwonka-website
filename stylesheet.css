@@ -401,6 +401,10 @@ body {
     text-decoration: none;
   }
 
+    .item a: hover {
+color: var(--accent-color);
+  }
+
   .empty {
   	height: 2.5vw;
   }
