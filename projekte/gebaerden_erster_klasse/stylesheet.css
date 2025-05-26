@@ -165,13 +165,6 @@ body {
 /* Projekt Container */
 
 
-				#page1, #page2, #page3, #page4, #page5, #page6, #page7 {
-					transform: translate(100vh, 100vw);
-					transition: 1s;
-					z-index: 99999;
-				}
-
-
 
 				#titel {
 					display: block;

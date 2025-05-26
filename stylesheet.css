@@ -217,32 +217,6 @@ body {
 /* Projekt Container */
 
 
-				#page1, #page2, #page3, #page4, #page5, #page6, #page7 {
-					transform: translate(100vh, 100vw);
-					transition: 1s;
-					z-index: 99999;
-				}
-
-
-				#close {
-					position: inherit;
-					z-index: 99999;
-					right: 13%;
-					transform: scaleY(0.65);
-					font-size: 2.5em;
-				}
-
-
-				#closeAbout {
-					position: fixed;
-					z-index: 99999;
-					right: 16.5%;
-					transform: scaleY(0.65);
-					font-size: 2.5em;
-					top: 9.5%;
-				}
-
-
 				#titel {
 					display: block;
 					color: white;
