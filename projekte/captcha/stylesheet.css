@@ -123,12 +123,11 @@ body {
 				}
 
 				#picCon img {
-					width: 100%;
+					width: 75%;
 					height: auto;
 					transform: rotate(90deg);
 					margin-top: 25%;
 					}
-
 
 				.picThumb {
 					width: 25vh;

@@ -55,6 +55,7 @@ body {
     	height: 5vh;
   	padding-left: 10vw;
   }
+
 		  
 		  
 		  	a {
@@ -66,20 +67,20 @@ body {
 /* Aufbau Grundlagen */
 
 			  #info {
+			  	width: 100vw;
 			    display: flex;
 			    z-index: 99999;
 			    flex-direction: row;
+			    justify-content: center;
 			    position: fixed;
 			    bottom: 5vw;
-			    color: #FFED00;
+			    color: var(--accent-color);
 			    font-size: 2vh;
-			    padding-left: 7vw;
 			  }
 
 
 			  #info p {
-			    margin-left: 4.25vh;
-			    margin-bottom: 3vh;
+			  	margin: 1em;
 			  }
 
 				.logoCon {
@@ -158,8 +159,9 @@ body {
 					height: 2vh;
 					font-size: 0.6em;
 					text-align: center;
-					color: #FFED00;
+					color: var(--accent-color);
 				}
+
 
 
 /* Projekt Container */
@@ -314,18 +316,19 @@ body {
 					width: 40vw;
 				}
 
-  #info {
-    font-size: 2vh;
-    padding-left: 2vw;
+ #info {
+    font-size: 2.5vh;
+    padding-left: 8vw;
     bottom: 0;
+    justify-content: start;
   }
 
   #naviGator {
-  	color: white;
   	display: flex;
 		z-index: 99999;
 		flex-direction: column;
 	  position: fixed;
+		color: var(--accent-color);
 		top: 11.5vh;
 		right: 10vw;
     font-size: 4vh;
@@ -338,8 +341,8 @@ body {
 	}
 
 	.footer p {
-			font-size: 0.6em;
-				}
+			font-size: 1.25vh;
+	}
 
 .projektBeschreibung {
 	color: #000;
@@ -374,13 +377,6 @@ body {
     margin-top: 0;
     padding-left: 3.5vw;
   }
-
-
-  #info {
-    font-size: 2.5vh;
-    padding-left: 1.5vw;
-  }
-
 
   .foSlide {
     width: 65vw;

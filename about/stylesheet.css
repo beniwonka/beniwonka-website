@@ -72,8 +72,8 @@ body {
   	height: 2.5vw;
   }
 
-	  #naviGator {
-	  	height: 5vh;
+#naviGator {
+		  	height: 5vh;
   	display: flex;
 		z-index: 99999;
 		flex-direction: row;
@@ -85,10 +85,11 @@ body {
     bottom: 0;
   }
 
-  #naviGator p {
-  	height: 5vh;
+    #naviGator p {
+    	height: 5vh;
   	padding-left: 10vw;
   }
+		 
 		  
 		  	a {
 			    text-decoration: none;
@@ -99,14 +100,20 @@ body {
 /* Aufbau Grundlagen */
 
 			  #info {
+			  	width: 100vw;
 			    display: flex;
 			    z-index: 99999;
 			    flex-direction: row;
+			    justify-content: center;
 			    position: fixed;
 			    bottom: 5vw;
 			    color: var(--accent-color);
 			    font-size: 2vh;
-			    padding-left: 7vw;
+			  }
+
+
+			  #info p {
+			  	margin: 1em;
 			  }
 
 			    #BW_about {
@@ -114,12 +121,6 @@ body {
   	padding-top: 15vh;
   	z-index: -1;
   }
-
-
-			  #info p {
-			    margin-left: 4.25vh;
-			    margin-bottom: 3vh;
-			  }
 
 
 				.logoCon {
@@ -212,6 +213,7 @@ body {
 					text-align: center;
 					color: var(--accent-color);
 				}
+
 
 
 /* Projekt Container */
@@ -351,9 +353,10 @@ body {
   }
 
   #info {
-    font-size: 2vh;
-    padding-left: 2vw;
+    font-size: 2.5vh;
+    padding-left: 8vw;
     bottom: 0;
+    justify-content: start;
   }
 
   #naviGator {
@@ -367,6 +370,15 @@ body {
     font-size: 4vh;
     bottom: 0;
   }
+  
+	.footer {
+		bottom: 0;
+		width: 95vw;
+	}
+
+	.footer p {
+			font-size: 1.25vh;
+	}
 
   #BW_about {
   	padding-left: 4vw;
@@ -416,14 +428,6 @@ color: var(--accent-color);
   	font-size: 0.75vw;
   }
   
-	.footer {
-		bottom: 0;
-		width: 95vw;
-	}
-
-	.footer p {
-			font-size: 0.6em;
-				}
 
   #picConTop {
     padding-left: 6vh;
@@ -437,11 +441,6 @@ color: var(--accent-color);
   .foSlide,
   .beschreibungCon {
     position: absolute;
-  }
-
-  #info {
-    font-size: 2.5vh;
-    padding-left: 1.5vw;
   }
 
 				.beschreibungCon {

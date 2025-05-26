@@ -65,20 +65,20 @@ body {
 /* Aufbau Grundlagen */
 
 			  #info {
+			  	width: 100vw;
 			    display: flex;
 			    z-index: 99999;
 			    flex-direction: row;
+			    justify-content: center;
 			    position: fixed;
 			    bottom: 5vw;
 			    color: var(--accent-color);
 			    font-size: 2vh;
-			    padding-left: 7vw;
 			  }
 
 
 			  #info p {
-			    margin-left: 4.25vh;
-			    margin-bottom: 3vh;
+			  	margin: 1em;
 			  }
 
 
@@ -159,7 +159,7 @@ body {
 
 				.footer p {
 					height: 2vh;
-					font-size: 0.4em;
+					font-size: 1vh;
 					text-align: center;
 					color: var(--accent-color);
 				}
@@ -373,9 +373,10 @@ body {
   }
 
   #info {
-    font-size: 2vh;
-    padding-left: 2vw;
+    font-size: 2.5vh;
+    padding-left: 8vw;
     bottom: 0;
+    justify-content: start;
   }
 
   #naviGator {
@@ -396,7 +397,7 @@ body {
 	}
 
 	.footer p {
-			font-size: 0.6em;
+			font-size: 1.25vh;
 	}
 
   #picConTop {
@@ -458,11 +459,6 @@ body {
     border-radius: 50px;
     overflow-x: hidden;
     overflow-y: scroll;
-  }
-
-  #info {
-    font-size: 2.5vh;
-    padding-left: 1.5vw;
   }
 
 
