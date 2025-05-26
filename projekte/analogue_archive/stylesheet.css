@@ -166,14 +166,6 @@ body {
 /* Projekt Container */
 
 
-				#page1, #page2, #page3, #page4, #page5, #page6, #page7 {
-					transform: translate(100vh, 100vw);
-					transition: 1s;
-					z-index: 99999;
-				}
-
-
-
 				#titel {
 					display: block;
 					color: white;
@@ -359,17 +351,6 @@ body {
   #photoThumb {
     width: 20vw;
     padding: 1vh 1vh 1vh 1vh;
-  }
-
-  .kategorie {
-    width: 35vw;
-  }
-
-  #buttonSel,
-  #buttonNo {
-    width: 5vw;
-    height: 2vh;
-    font-size: 0.9vw;
   }
 
   .lightbox {

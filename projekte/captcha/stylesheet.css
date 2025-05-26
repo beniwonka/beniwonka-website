@@ -38,7 +38,7 @@ body {
 
 @media (min-width: 319px) {
 
-			  #naviGator {
+#naviGator {
 		  	height: 5vh;
   	display: flex;
 		z-index: 99999;
@@ -66,20 +66,20 @@ body {
 /* Aufbau Grundlagen */
 
 			  #info {
+			  	width: 100vw;
 			    display: flex;
 			    z-index: 99999;
 			    flex-direction: row;
+			    justify-content: center;
 			    position: fixed;
 			    bottom: 5vw;
-			    color: #FFED00;
+			    color: var(--accent-color);
 			    font-size: 2vh;
-			    padding-left: 7vw;
 			  }
 
 
 			  #info p {
-			    margin-left: 4.25vh;
-			    margin-bottom: 3vh;
+			  	margin: 1em;
 			  }
 
 				.logoCon {
@@ -157,20 +157,11 @@ body {
 					height: 2vh;
 					font-size: 0.6em;
 					text-align: center;
-					color: #FFED00;
+					color: var(--accent-color);
 				}
 
 
 /* Projekt Container */
-
-
-				#page1, #page2, #page3, #page4, #page5, #page6, #page7 {
-					transform: translate(100vh, 100vw);
-					transition: 1s;
-					z-index: 99999;
-				}
-
-
 
 				#titel {
 					display: block;
@@ -244,36 +235,6 @@ body {
 				}
 
 
-				#buttonSel {
-					width: 20vw;
-					height: 2vh;
-					font-weight: 400;
-					font-size: 0.5em;
-					margin-right: 1em;
-					margin-top: 0.5em;
-					padding: 0.5em;
-					border: 0.25vh solid black;
-					text-align: center;
-					border-radius: 25px;
-					color: black;
-				}
-
-
-				#buttonNo {
-					font-weight: 200;
-					font-size: 0.5em;
-					margin-right: 1em;
-					margin-top: 0.5em;
-					opacity: 30%;
-					padding: 0.5em;
-					border: 0.25vh solid black;
-					text-align: center;
-					border-radius: 25px;
-					color: black;
-					width: 20vw;
-					height: 2vh;
-				}
-
 /* Projekt Lightbox */
 
 				 .lightbox {
@@ -313,18 +274,19 @@ body {
 					width: 40vw;
 				}
 
-  #info {
-    font-size: 2vh;
-    padding-left: 2vw;
+#info {
+    font-size: 2.5vh;
+    padding-left: 8vw;
     bottom: 0;
+    justify-content: start;
   }
 
   #naviGator {
-  	color: white;
   	display: flex;
 		z-index: 99999;
 		flex-direction: column;
 	  position: fixed;
+		color: var(--accent-color);
 		top: 11.5vh;
 		right: 10vw;
     font-size: 4vh;
@@ -337,8 +299,8 @@ body {
 	}
 
 	.footer p {
-			font-size: 0.6em;
-				}
+			font-size: 1.25vh;
+	}
 
 .projektBeschreibung {
 	color: #000;
@@ -355,10 +317,6 @@ body {
 
   .picThumb {
     height: 35vh;
-  }
-
-  .kategorie {
-    flex-wrap: nowrap;
   }
 
   .foSlide,
@@ -396,16 +354,6 @@ body {
     padding: 1vh 1vh 1vh 1vh;
   }
 
-  .kategorie {
-    width: 35vw;
-  }
-
-  #buttonSel,
-  #buttonNo {
-    width: 5vw;
-    height: 2vh;
-    font-size: 0.9vw;
-  }
 
   .lightbox {
   	  transform: translate(-50%, -50%);
