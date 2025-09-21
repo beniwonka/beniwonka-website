@@ -22,55 +22,67 @@
 <url>
   <loc>https://beniwonka.de/about/beni_wonka.html</loc>
   <lastmod>2025-05-25T17:18:46Z</lastmod>
-  <priority>1.00</priority>
+  <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://beniwonka.de/projekte/BW_projekte.html</loc>
   <lastmod>2025-05-25T17:18:46Z</lastmod>
-  <priority>1.00</priority>
+  <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://beniwonka.de/projekte/gebaerden_erster_klasse/BW_gebaerdenersterklasse.html</loc>
   <lastmod>2025-05-25T17:18:46Z</lastmod>
-  <priority>1.00</priority>
+  <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://beniwonka.de/projekte/werkschaumagazin/BW_werkschaumagazin_2021.html</loc>
   <lastmod>2025-05-25T17:18:46Z</lastmod>
-  <priority>1.00</priority>
+  <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://beniwonka.de/projekte/analogue_archive/BW_analogue_archive.html</loc>
   <lastmod>2025-05-25T17:18:46Z</lastmod>
-  <priority>1.00</priority>
+  <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://beniwonka.de/projekte/neo_unleashed/BW_neounleashed_cover.html</loc>
   <lastmod>2025-05-25T17:18:46Z</lastmod>
-  <priority>1.00</priority>
+  <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://beniwonka.de/projekte/various/BW_various_covers.html</loc>
   <lastmod>2025-05-25T17:18:46Z</lastmod>
-  <priority>1.00</priority>
+  <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://beniwonka.de/projekte/flogotti_events/BW_flogotti_events.html</loc>
   <lastmod>2025-05-25T17:18:46Z</lastmod>
-  <priority>1.00</priority>
+  <priority>0.75</priority>
 </url>
 
 <url>
   <loc>https://beniwonka.de/projekte/BW_captcha_2020_designfestival.html</loc>
   <lastmod>2025-05-25T17:18:46Z</lastmod>
-  <priority>1.00</priority>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://beniwonka.de/projekte/leadarise/BW_leadarise_2025.html</loc>
+  <lastmod>2025-09-21T09:18:46Z</lastmod>
+  <priority>0.75</priority>
+</url>
+
+<url>
+  <loc>https://beniwonka.de/projekte/kern_otto/BW_kern-otto_2025.html</loc>
+  <lastmod>2025-09-21T09:18:46Z</lastmod>
+  <priority>0.75</priority>
 </url>
 
 </urlset>
