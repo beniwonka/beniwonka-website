@@ -10,11 +10,12 @@
 }
 
 :root {
-  --accent-color: #FFED00;
+  --accent-color: black;
 }
 
 html {
   cursor: cell;
+  background-color: grey;
   font-family: 'DM Sans', sans-serif;
   user-select: none;
 }
@@ -29,7 +30,6 @@ img {
 
 body {
   margin: 0;
-  background-color: black;
   overflow-x: hidden;
   overflow-y: hidden;
   scrollbar-width: none; /* Firefox */
@@ -46,7 +46,7 @@ body {
     padding-top: 4em;
     display: flex;
     gap: 1rem;
-    color: white;
+    color: black;
   }
 
   .column {
@@ -64,7 +64,7 @@ body {
   .item a {
   	font-size: 3vw;
     font-weight: bold;
-    color: white;
+    color: black;
     text-decoration: none;
   }
 
@@ -125,7 +125,7 @@ body {
 				.logoCon {
 					position: fixed;
 					z-index: 1;
-					top: 12.5vh;
+					top: 8.5vh;
 					left: 15vw;
 					width: 55%;
 					height: auto;
@@ -219,7 +219,7 @@ body {
 
 				#titel {
 					display: block;
-					color: white;
+					color: black;
 					overflow-wrap: break-word;
 					line-height: 1em;
 					font-weight: 400;
@@ -304,7 +304,7 @@ body {
 
 					#titel {
 					display: block;
-					color: white;
+					color: black;
 					overflow-wrap: break-word;
 					line-height: 1em;
 					font-weight: 400;
@@ -315,7 +315,7 @@ body {
 				}
  
   .logoCon {
-    top: 25vh;
+    top: 17vh;
     left: 10.5vw;
     width: 18%;
   }
@@ -362,7 +362,7 @@ body {
     padding-top: 4em;
     display: flex;
     gap: 2rem;
-    color: white;
+    color: black;
   }
 
   .column {
@@ -380,7 +380,7 @@ body {
   .item a {
   	font-size: 1.15vw;
     font-weight: bold;
-    color: white;
+    color: black;
     text-decoration: none;
   }
 

@@ -10,7 +10,7 @@
 }
 
 :root {
-  --accent-color: #FFED00;
+  --accent-color: #000000;
 }
 
 html {
@@ -29,7 +29,7 @@ img {
 
 body {
   margin: 0;
-  background-color: black;
+  background-color: grey;
   overflow-x: hidden;
   overflow-y: hidden;
   scrollbar-width: none; /* Firefox */
@@ -59,7 +59,7 @@ body {
 		  
 		  	a {
 			    text-decoration: none;
-			    color: #FFED00;
+			    color: black;
 			  }
 
 
@@ -85,7 +85,7 @@ body {
 				.logoCon {
 					position: fixed;
 					z-index: 1;
-					top: 12.5vh;
+					top: 8.5vh;
 					left: 15vw;
 					width: 55%;
 					height: auto;
@@ -162,20 +162,13 @@ body {
 				}
 
 
+
 /* Projekt Container */
-
-
-				#page1, #page2, #page3, #page4, #page5, #page6, #page7 {
-					transform: translate(100vh, 100vw);
-					transition: 1s;
-					z-index: 99999;
-				}
-
 
 
 				#titel {
 					display: block;
-					color: white;
+					color: black;
 					overflow-wrap: break-word;
 					line-height: 1em;
 					font-weight: 400;
@@ -187,7 +180,7 @@ body {
 
 
 				#unterTitel {
-					color: white;
+					color: black;
 					font-size: 2vh;
 					display: inline-block;
 					letter-spacing: 0em;
@@ -205,7 +198,7 @@ body {
 
 
 				.beschreibungCon a {
-					color: white;
+					color: black;
 					text-decoration: underline;
 				}
 
@@ -213,7 +206,7 @@ body {
 				#beschreibung {
 					letter-spacing: 0em;
 					font-size: 1.15vw;
-					color: white;
+					color: black;
 					font-size: 1.5vh;
 					font-weight: 200;
 				}
@@ -242,37 +235,6 @@ body {
 					flex-direction: row;
 					width: 100vw;
 					flex-wrap: wrap;
-				}
-
-
-				#buttonSel {
-					width: 20vw;
-					height: 2vh;
-					font-weight: 400;
-					font-size: 0.5em;
-					margin-right: 1em;
-					margin-top: 0.5em;
-					padding: 0.5em;
-					border: 0.25vh solid black;
-					text-align: center;
-					border-radius: 25px;
-					color: black;
-				}
-
-
-				#buttonNo {
-					font-weight: 200;
-					font-size: 0.5em;
-					margin-right: 1em;
-					margin-top: 0.5em;
-					opacity: 30%;
-					padding: 0.5em;
-					border: 0.25vh solid black;
-					text-align: center;
-					border-radius: 25px;
-					color: black;
-					width: 20vw;
-					height: 2vh;
 				}
 
 /* Projekt Lightbox */
@@ -304,7 +266,7 @@ body {
 
 @media (min-width: 540px) {
   .logoCon {
-    top: 25vh;
+    top: 17vh;
     left: 10.5vw;
     width: 18%;
   }
@@ -343,7 +305,7 @@ body {
 	}
 
 .projektBeschreibung {
-	color: #000;
+	color: #000000;
 }
 
  .beschreibungCon {
@@ -375,7 +337,7 @@ body {
     margin-top: 0;
     padding-left: 3.5vw;
   }
-
+  
   .foSlide {
     width: 65vw;
     display: flex;
@@ -389,17 +351,6 @@ body {
   #photoThumb {
     width: 20vw;
     padding: 1vh 1vh 1vh 1vh;
-  }
-
-  .kategorie {
-    width: 35vw;
-  }
-
-  #buttonSel,
-  #buttonNo {
-    width: 5vw;
-    height: 2vh;
-    font-size: 0.9vw;
   }
 
   .lightbox {
@@ -437,7 +388,7 @@ body {
 
 						#titel {
 					display: block;
-					color: white;
+					color: black;
 					overflow-wrap: break-word;
 					line-height: 1em;
 					font-weight: 400;
@@ -449,7 +400,7 @@ body {
 
 
 				#unterTitel {
-					color: white;
+					color: black;
 					font-size: 1.15vw;
 					display: inline-block;
 					letter-spacing: 0em;
@@ -460,7 +411,7 @@ body {
 				#beschreibung {
 					letter-spacing: 0em;
 					font-size: 1.15vw;
-					color: white;
+					color: black;
 					font-size: 2vh;
 					font-weight: 200;
 				}

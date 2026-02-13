@@ -10,7 +10,7 @@
 }
 
 :root {
-  --accent-color: #FFED00;
+  --accent-color: black;
 }
 
 html {
@@ -29,7 +29,7 @@ img {
 
 body {
   margin: 0;
-  background-color: black;
+  background-color: grey;
   overflow-x: hidden;
   overflow-y: hidden;
   scrollbar-width: none; /* Firefox */
@@ -85,7 +85,7 @@ body {
 				.logoCon {
 					position: fixed;
 					z-index: 1;
-					top: 12.5vh;
+					top: 8.5vh;
 					left: 15vw;
 					width: 55%;
 					height: auto;
@@ -367,7 +367,7 @@ body {
 
 @media (min-width: 540px) {
   .logoCon {
-    top: 25vh;
+    top: 17vh;
     left: 10.5vw;
     width: 18%;
   }
