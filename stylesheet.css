@@ -53,6 +53,7 @@ body {
     flex-direction: column;
     gap: 3rem;
     flex: 1;
+    flex-basis: auto;
   }
 
   .item {
@@ -68,7 +69,7 @@ body {
   }
 
   .empty {
-  	height: 5.5vw;
+  	/*height: 5.5vw;*/
   }
 
 			  #naviGator {
@@ -375,7 +376,7 @@ background: linear-gradient(0deg,rgba(128, 128, 128, 1) 0%, rgba(128, 128, 128, 
   .column {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
     flex: 1;
   }
 
