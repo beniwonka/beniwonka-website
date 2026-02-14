@@ -159,8 +159,12 @@ body {
 
 				.footer p {
 					height: 2vh;
-					font-size: 1vh;
+					font-size: 0.6em;
 					text-align: center;
+					position: fixed;
+					bottom: 0;
+					text-align: center;
+					width: 100%;
 					color: var(--accent-color);
 				}
 
