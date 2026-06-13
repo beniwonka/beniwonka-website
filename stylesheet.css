@@ -69,7 +69,8 @@ body {
   }
 
   .empty {
-  	/*height: 5.5vw;*/
+flex-direction: column;
+gap: 3rem;
   }
 
 			  #naviGator {
