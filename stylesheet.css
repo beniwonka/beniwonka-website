@@ -57,6 +57,7 @@ body {
   }
 
   .item {
+  	height: 2em;
     display: flex;
     flex-direction: column;
   }
@@ -69,6 +70,7 @@ body {
   }
 
   .empty {
+  	 height: 2em;
 flex-direction: column;
 gap: 3rem;
   }
@@ -397,9 +399,6 @@ background: linear-gradient(0deg,rgba(128, 128, 128, 1) 0%, rgba(128, 128, 128, 
 color: var(--accent-color);
   }
 
-  .empty {
-  	height: 2.5vw;
-  }
 
   .subtitle {
   	font-size: 0.75vw;
