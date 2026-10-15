@@ -11,6 +11,7 @@
 
 :root {
   --accent-color: black;
+  --bg-color: grey;
 }
 
 html {
@@ -29,7 +30,7 @@ img {
 
 body {
   margin: 0;
-  background-color: grey;
+  background-color: var(--bg-color);
   overflow-x: hidden;
   overflow-y: hidden;
   scrollbar-width: none; /* Firefox */
@@ -132,22 +133,83 @@ body {
 				}
 
 
-				#picConBot img {
+				#picConBot .thumbWrap {
 					transform: rotate(90deg);
 					}
 
 
-				.picThumb {
-					height: 55vh;
-					width: auto;
+				.thumbWrap {
+					position: relative;
+					display: inline-block;
 					transition: 0.65s;
 					padding: 1vh 1vh 1vh 0;
 				}
 
 
-				.picThumb:hover {
+				.thumbWrap:hover {
 					animation: 1s ease-in 2s;
 					scale: 110%;
+				}
+
+
+				.picThumb {
+					display: block;
+					height: 55vh;
+					width: auto;
+				}
+
+
+				/* Overlay auf den Projektbildern */
+
+				.thumbOverlay {
+					position: absolute;
+					top: 1vh;
+					right: 1vh;
+					bottom: 1vh;
+					left: 0;
+					box-sizing: border-box;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					align-items: flex-end;
+					text-align: right;
+					padding: 2.5vh;
+					background-color: var(--bg-color);
+					box-shadow: 0 0 0 2px var(--bg-color); /* deckt Bildkanten ab */
+					color: var(--accent-color);
+					opacity: 1;
+					transition: opacity 0.4s ease;
+					pointer-events: none;
+				}
+
+
+				.thumbWrap:hover .thumbOverlay,
+				a:focus-visible .thumbOverlay {
+					opacity: 0;
+				}
+
+
+				/* Touch-Geräte haben kein Hover: Overlay weglassen, damit die Bilder sichtbar bleiben */
+				@media (hover: none) {
+					.thumbOverlay {
+						display: none;
+					}
+				}
+
+
+				.thumbOverlay h2 {
+					margin: 0;
+					font-size: 3vh;
+					font-weight: 400;
+					line-height: 1em;
+					letter-spacing: -0.03em;
+				}
+
+
+				.thumbOverlay p {
+					margin: 0.6vh 0 0;
+					font-size: 1.8vh;
+					font-weight: 200;
 				}
 
 				.footer {
